@@ -20369,7 +20369,7 @@ ${CJe(f)}`), super(t.shortMessage, {
       };
     } catch (R) {
       const D = n_e(R), { offchainLookup: N, offchainLookupSignature: Q } = await Oc(async () => {
-        const { offchainLookup: V, offchainLookupSignature: G } = await import("./index-D5w8GjlW.js").then(async (m2) => {
+        const { offchainLookup: V, offchainLookupSignature: G } = await import("./index-BsBii2UK.js").then(async (m2) => {
           await m2.__tla;
           return m2;
         }).then((q) => q.c);
@@ -110279,7 +110279,7 @@ ${n}${e}`, "utf8");
     static async sendErc721(t, n, r, a, s, i, o) {
       if (t.type === "injected") {
         const d = t, f = "0x" + t.getEvmAddress(), h = s.data.address, g = n, p = "0x23b872dd", v = f.replace("0x", "").padStart(64, "0"), m = g.replace("0x", "").padStart(64, "0"), b = BigInt(i).toString(16).padStart(64, "0"), y = p + v + m + b, { createWalletClient: w, custom: B, publicActions: T } = await Oc(async () => {
-          const { createWalletClient: P, custom: U, publicActions: R } = await import("./index-D5w8GjlW.js").then(async (m2) => {
+          const { createWalletClient: P, custom: U, publicActions: R } = await import("./index-BsBii2UK.js").then(async (m2) => {
             await m2.__tla;
             return m2;
           }).then((D) => D.i);
@@ -118164,7 +118164,7 @@ ${n}${e}`, "utf8");
       return oV(p);
     }
   }
-  const C_ = "/assets/AVXTO_Icon-C4PhuO-v.png", M7t = 1e4, bSe = 1e4, N7t = 8, F7t = 1e3, Q7t = "0.0.63", ySe = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", O7t = new se(1e6), wSe = "AVXTO", ISe = C_, ESe = "AVAX Toolbox", BSe = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", V7t = new se(1e6), CSe = "SMTK", xSe = C_, TSe = "SomeToken", rD = {
+  const C_ = "/assets/AVXTO_Icon-C4PhuO-v.png", M7t = 1e4, bSe = 1e4, N7t = 8, F7t = 1e3, Q7t = "0.0.64", ySe = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", O7t = new se(1e6), wSe = "AVXTO", ISe = C_, ESe = "AVAX Toolbox", BSe = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", V7t = new se(1e6), CSe = "SMTK", xSe = C_, TSe = "SomeToken", rD = {
     pollingIntervals: {
       xChain: M7t,
       cChain: bSe
@@ -163603,7 +163603,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
   async function Kvn(e, t, n, r) {
     const a = "0x" + e.getEvmAddress(), s = e.provider, { createWalletClient: i, custom: o, publicActions: A } = await Oc(async () => {
-      const { createWalletClient: d, custom: f, publicActions: h } = await import("./index-D5w8GjlW.js").then(async (m) => {
+      const { createWalletClient: d, custom: f, publicActions: h } = await import("./index-BsBii2UK.js").then(async (m) => {
         await m.__tla;
         return m;
       }).then((g) => g.i);
@@ -164033,7 +164033,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     const s = "0x" + e.getEvmAddress();
     if (e.type === "injected") {
       const f = e.provider, { createWalletClient: h, custom: g, publicActions: p } = await Oc(async () => {
-        const { createWalletClient: b, custom: y, publicActions: w } = await import("./index-D5w8GjlW.js").then(async (m) => {
+        const { createWalletClient: b, custom: y, publicActions: w } = await import("./index-BsBii2UK.js").then(async (m) => {
           await m.__tla;
           return m;
         }).then((B) => B.i);
