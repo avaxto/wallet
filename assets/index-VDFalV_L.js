@@ -20369,7 +20369,7 @@ ${htt(f)}`), super(t.shortMessage, {
       };
     } catch (D) {
       const R = Xnt(D), { offchainLookup: M, offchainLookupSignature: F } = await Wc(async () => {
-        const { offchainLookup: O, offchainLookupSignature: V } = await import("./index-CEmG1Z7D.js").then(async (m10) => {
+        const { offchainLookup: O, offchainLookupSignature: V } = await import("./index-CA4CN67r.js").then(async (m10) => {
           await m10.__tla;
           return m10;
         }).then((G) => G.c);
@@ -110257,7 +110257,7 @@ ${n}${e}`, "utf8");
     static async sendErc721(t, n, r, a, s, i, o) {
       if (t.type === "injected") {
         const d = t, f = "0x" + t.getEvmAddress(), h = s.data.address, g = n, p = "0x23b872dd", v = f.replace("0x", "").padStart(64, "0"), m = g.replace("0x", "").padStart(64, "0"), y = BigInt(i).toString(16).padStart(64, "0"), b = p + v + m + y, { createWalletClient: w, custom: B, publicActions: C } = await Wc(async () => {
-          const { createWalletClient: P, custom: U, publicActions: D } = await import("./index-CEmG1Z7D.js").then(async (m10) => {
+          const { createWalletClient: P, custom: U, publicActions: D } = await import("./index-CA4CN67r.js").then(async (m10) => {
             await m10.__tla;
             return m10;
           }).then((R) => R.i);
@@ -118052,6 +118052,12 @@ ${n}${e}`, "utf8");
     getXPAddress(t, n) {
       return t === "P" ? this.getCurrentAddressPlatform() : t === "C" ? this.getEvmAddressBech() : this.getCurrentAddressAvm();
     }
+    getIndexZeroAddressAvm() {
+      return this.getCurrentAddressAvm();
+    }
+    getIndexZeroAddressPlatform() {
+      return this.getCurrentAddressPlatform();
+    }
     getEvmChecksumAddress() {
       return Io.toChecksumAddress("0x" + this.getEvmAddress());
     }
@@ -118113,7 +118119,7 @@ ${n}${e}`, "utf8");
     async exportFromXChain(t, n, r) {
       if (n === "C" && !r) throw new Error("Exports to C chain must specify an import fee.");
       let a = t.clone();
-      const s = n === "P" ? this.getCurrentAddressPlatform() : this.getEvmAddressBech();
+      const s = n === "P" ? this.getIndexZeroAddressPlatform() : this.getEvmAddressBech();
       if (r) a = t.add(r);
       else if (n === "P") {
         const u = is.getTxFee();
@@ -118130,11 +118136,11 @@ ${n}${e}`, "utf8");
         const d = qr.getTxFee();
         a = t.add(d);
       }
-      const s = n === "C" ? this.getEvmAddressBech() : this.getCurrentAddressAvm(), i = this.getPlatformUTXOSet(), o = wv(i), A = this.getCurrentAddressPlatform(), l = this.getAllAddressesP(), c = await xM(o, l, s, a, A, n), u = await this.signP(c);
+      const s = n === "C" ? this.getEvmAddressBech() : this.getIndexZeroAddressAvm(), i = this.getPlatformUTXOSet(), o = wv(i), A = this.getCurrentAddressPlatform(), l = this.getAllAddressesP(), c = await xM(o, l, s, a, A, n), u = await this.signP(c);
       return await this.issueP(u);
     }
     async exportFromCChain(t, n, r) {
-      const a = qr.getTxFee(), s = t.add(a), i = this.getEvmAddress(), o = n === "X" ? this.getCurrentAddressAvm() : this.getCurrentAddressPlatform(), A = await N_([
+      const a = qr.getTxFee(), s = t.add(a), i = this.getEvmAddress(), o = n === "X" ? this.getIndexZeroAddressAvm() : this.getIndexZeroAddressPlatform(), A = await N_([
         `0x${i}`
       ], o, s, "", n);
       console.log("Built export transaction", A);
@@ -118144,7 +118150,7 @@ ${n}${e}`, "utf8");
       return console.log("Issued export transaction", d), d;
     }
     async estimateExportFee(t, n) {
-      const r = this.getEvmAddress(), a = this.getEvmAddressBech(), s = t === "X" ? this.getCurrentAddressAvm() : this.getCurrentAddressPlatform();
+      const r = this.getEvmAddress(), a = this.getEvmAddressBech(), s = t === "X" ? this.getIndexZeroAddressAvm() : this.getIndexZeroAddressPlatform();
       return m0t(t, r, a, s, n);
     }
     async avmGetAtomicUTXOs(t) {
@@ -118158,7 +118164,7 @@ ${n}${e}`, "utf8");
     async importToPlatformChain(t) {
       const n = await this.platformGetAtomicUTXOs(t);
       if (n.getAllUTXOs().length === 0) throw new Error("Nothing to import.");
-      const r = jc(t), a = this.getCurrentAddressPlatform(), s = vr.getHRP(), i = n.getAddresses().map((l) => Xt.addressToString(s, "P", l)), o = await is.buildImportTx(n, i, r, [
+      const r = jc(t), a = this.getIndexZeroAddressPlatform(), s = vr.getHRP(), i = n.getAddresses().map((l) => Xt.addressToString(s, "P", l)), o = await is.buildImportTx(n, i, r, [
         a
       ], [
         a
@@ -118171,7 +118177,7 @@ ${n}${e}`, "utf8");
       console.log(`[AbstractWallet] importToXChain called with sourceChain: ${t}`);
       const n = await this.avmGetAtomicUTXOs(t);
       if (n.getAllUTXOs().length === 0) throw new Error("Nothing to import.");
-      const r = this.getCurrentAddressAvm(), a = vr.getHRP(), s = n.getAddresses().map((u) => Xt.addressToString(a, "X", u)), i = s, o = s, A = jc(t), l = await qr.buildImportTx(n, o, A, [
+      const r = this.getIndexZeroAddressAvm(), a = vr.getHRP(), s = n.getAddresses().map((u) => Xt.addressToString(a, "X", u)), i = s, o = s, A = jc(t), l = await qr.buildImportTx(n, o, A, [
         r
       ], i, [
         r
@@ -118229,7 +118235,7 @@ ${n}${e}`, "utf8");
       }, l);
     }
   }
-  const Hee = "/assets/AVXTO_Icon-C4PhuO-v.png", BHt = 1e4, Y8e = 1e4, CHt = 8, xHt = 1e3, THt = "0.0.77", J8e = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", SHt = new se(1e6), K8e = "AVXTO", _8e = Hee, $8e = "AVAX Toolbox", eRe = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", kHt = new se(1e6), tRe = "SMTK", nRe = Hee, rRe = "SomeToken", MU = {
+  const Hee = "/assets/AVXTO_Icon-C4PhuO-v.png", BHt = 1e4, Y8e = 1e4, CHt = 8, xHt = 1e3, THt = "0.0.78", J8e = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", SHt = new se(1e6), K8e = "AVXTO", _8e = Hee, $8e = "AVAX Toolbox", eRe = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", kHt = new se(1e6), tRe = "SMTK", nRe = Hee, rRe = "SomeToken", MU = {
     pollingIntervals: {
       xChain: BHt,
       cChain: Y8e
@@ -118651,6 +118657,12 @@ ${n}${e}`, "utf8");
     }
     getCurrentAddressAvm() {
       return this.externalHelper.getCurrentAddress();
+    }
+    getIndexZeroAddressAvm() {
+      return this.externalHelper.getAddressForIndex(0);
+    }
+    getIndexZeroAddressPlatform() {
+      return this.platformHelper.getAddressForIndex(0);
     }
     getChangeAddressAvm() {
       return this.internalHelper.getCurrentAddress();
@@ -168062,7 +168074,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
   async function ZBn(e, t, n, r) {
     const a = "0x" + e.getEvmAddress(), s = e.provider, { createWalletClient: i, custom: o, publicActions: A } = await Wc(async () => {
-      const { createWalletClient: d, custom: f, publicActions: h } = await import("./index-CEmG1Z7D.js").then(async (m) => {
+      const { createWalletClient: d, custom: f, publicActions: h } = await import("./index-CA4CN67r.js").then(async (m) => {
         await m.__tla;
         return m;
       }).then((g) => g.i);
@@ -168492,7 +168504,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     const s = "0x" + e.getEvmAddress();
     if (e.type === "injected") {
       const f = e.provider, { createWalletClient: h, custom: g, publicActions: p } = await Wc(async () => {
-        const { createWalletClient: y, custom: b, publicActions: w } = await import("./index-CEmG1Z7D.js").then(async (m) => {
+        const { createWalletClient: y, custom: b, publicActions: w } = await import("./index-CA4CN67r.js").then(async (m) => {
           await m.__tla;
           return m;
         }).then((B) => B.i);
