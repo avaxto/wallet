@@ -20369,7 +20369,7 @@ ${CJe(f)}`), super(t.shortMessage, {
       };
     } catch (D) {
       const R = n_e(D), { offchainLookup: N, offchainLookupSignature: Q } = await Vc(async () => {
-        const { offchainLookup: V, offchainLookupSignature: G } = await import("./index-B49jdjhf.js").then(async (m2) => {
+        const { offchainLookup: V, offchainLookupSignature: G } = await import("./index-UTnoKK7l.js").then(async (m2) => {
           await m2.__tla;
           return m2;
         }).then((q) => q.c);
@@ -110279,7 +110279,7 @@ ${n}${e}`, "utf8");
     static async sendErc721(t, n, r, a, s, i, o) {
       if (t.type === "injected") {
         const d = t, f = "0x" + t.getEvmAddress(), g = s.data.address, h = n, p = "0x23b872dd", v = f.replace("0x", "").padStart(64, "0"), m = h.replace("0x", "").padStart(64, "0"), b = BigInt(i).toString(16).padStart(64, "0"), y = p + v + m + b, { createWalletClient: w, custom: B, publicActions: T } = await Vc(async () => {
-          const { createWalletClient: P, custom: U, publicActions: D } = await import("./index-B49jdjhf.js").then(async (m2) => {
+          const { createWalletClient: P, custom: U, publicActions: D } = await import("./index-UTnoKK7l.js").then(async (m2) => {
             await m2.__tla;
             return m2;
           }).then((R) => R.i);
@@ -118164,7 +118164,7 @@ ${n}${e}`, "utf8");
       return oV(p);
     }
   }
-  const C_ = "/assets/AVXTO_Icon-C4PhuO-v.png", M7t = 1e4, bSe = 1e4, N7t = 8, F7t = 1e3, Q7t = "0.0.70", ySe = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", O7t = new se(1e6), wSe = "AVXTO", ISe = C_, ESe = "AVAX Toolbox", BSe = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", V7t = new se(1e6), CSe = "SMTK", xSe = C_, TSe = "SomeToken", rD = {
+  const C_ = "/assets/AVXTO_Icon-C4PhuO-v.png", M7t = 1e4, bSe = 1e4, N7t = 8, F7t = 1e3, Q7t = "0.0.72", ySe = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", O7t = new se(1e6), wSe = "AVXTO", ISe = C_, ESe = "AVAX Toolbox", BSe = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", V7t = new se(1e6), CSe = "SMTK", xSe = C_, TSe = "SomeToken", rD = {
     pollingIntervals: {
       xChain: M7t,
       cChain: bSe
@@ -163607,7 +163607,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
   async function Kvn(e, t, n, r) {
     const a = "0x" + e.getEvmAddress(), s = e.provider, { createWalletClient: i, custom: o, publicActions: A } = await Vc(async () => {
-      const { createWalletClient: d, custom: f, publicActions: g } = await import("./index-B49jdjhf.js").then(async (m) => {
+      const { createWalletClient: d, custom: f, publicActions: g } = await import("./index-UTnoKK7l.js").then(async (m) => {
         await m.__tla;
         return m;
       }).then((h) => h.i);
@@ -164037,7 +164037,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     const s = "0x" + e.getEvmAddress();
     if (e.type === "injected") {
       const f = e.provider, { createWalletClient: g, custom: h, publicActions: p } = await Vc(async () => {
-        const { createWalletClient: b, custom: y, publicActions: w } = await import("./index-B49jdjhf.js").then(async (m) => {
+        const { createWalletClient: b, custom: y, publicActions: w } = await import("./index-UTnoKK7l.js").then(async (m) => {
           await m.__tla;
           return m;
         }).then((B) => B.i);
@@ -172528,7 +172528,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       });
       const A = async () => {
         const u = e.value;
-        if (!(!u || a.value || !r.value)) {
+        if (!(!u || a.value)) {
           a.value = true;
           try {
             const d = await u.vault.deriveKey(r.value);
@@ -172610,7 +172610,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 small: "",
                 type: "submit",
                 loading: e.isDeriving,
-                disabled: !e.password || e.isDeriving
+                disabled: e.isDeriving
               }, {
                 default: fe(() => [
                   ...t[2] || (t[2] = [
@@ -172659,7 +172659,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     ],
     [
       "__scopeId",
-      "data-v-7223ab1a"
+      "data-v-a82f2bfc"
     ]
   ]), J3n = {
     components: {
