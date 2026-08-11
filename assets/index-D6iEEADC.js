@@ -20369,7 +20369,7 @@ ${htt(f)}`), super(t.shortMessage, {
       };
     } catch (D) {
       const R = Xnt(D), { offchainLookup: M, offchainLookupSignature: F } = await jc(async () => {
-        const { offchainLookup: O, offchainLookupSignature: V } = await import("./index-C5N31WYP.js").then(async (m10) => {
+        const { offchainLookup: O, offchainLookupSignature: V } = await import("./index-C4kNZ5yJ.js").then(async (m10) => {
           await m10.__tla;
           return m10;
         }).then((G) => G.c);
@@ -110257,7 +110257,7 @@ ${n}${e}`, "utf8");
     static async sendErc721(t, n, r, a, s, i, o) {
       if (t.type === "injected") {
         const d = t, f = "0x" + t.getEvmAddress(), h = s.data.address, g = n, p = "0x23b872dd", v = f.replace("0x", "").padStart(64, "0"), m = g.replace("0x", "").padStart(64, "0"), y = BigInt(i).toString(16).padStart(64, "0"), b = p + v + m + y, { createWalletClient: w, custom: B, publicActions: C } = await jc(async () => {
-          const { createWalletClient: P, custom: U, publicActions: D } = await import("./index-C5N31WYP.js").then(async (m10) => {
+          const { createWalletClient: P, custom: U, publicActions: D } = await import("./index-C4kNZ5yJ.js").then(async (m10) => {
             await m10.__tla;
             return m10;
           }).then((R) => R.i);
@@ -118250,7 +118250,7 @@ ${n}${e}`, "utf8");
       }, l);
     }
   }
-  const Hee = "/assets/AVXTO_Icon-C4PhuO-v.png", BHt = 1e4, Y8e = 1e4, CHt = 8, xHt = 1e3, THt = "0.0.79", J8e = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", SHt = new se(1e6), K8e = "AVXTO", _8e = Hee, $8e = "AVAX Toolbox", eRe = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", kHt = new se(1e6), tRe = "SMTK", nRe = Hee, rRe = "SomeToken", MU = {
+  const Hee = "/assets/AVXTO_Icon-C4PhuO-v.png", BHt = 1e4, Y8e = 1e4, CHt = 8, xHt = 1e3, THt = "0.0.80", J8e = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", SHt = new se(1e6), K8e = "AVXTO", _8e = Hee, $8e = "AVAX Toolbox", eRe = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", kHt = new se(1e6), tRe = "SMTK", nRe = Hee, rRe = "SomeToken", MU = {
     pollingIntervals: {
       xChain: BHt,
       cChain: Y8e
@@ -168101,7 +168101,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
   async function ZBn(e, t, n, r) {
     const a = "0x" + e.getEvmAddress(), s = e.provider, { createWalletClient: i, custom: o, publicActions: A } = await jc(async () => {
-      const { createWalletClient: d, custom: f, publicActions: h } = await import("./index-C5N31WYP.js").then(async (m) => {
+      const { createWalletClient: d, custom: f, publicActions: h } = await import("./index-C4kNZ5yJ.js").then(async (m) => {
         await m.__tla;
         return m;
       }).then((g) => g.i);
@@ -168531,7 +168531,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     const s = "0x" + e.getEvmAddress();
     if (e.type === "injected") {
       const f = e.provider, { createWalletClient: h, custom: g, publicActions: p } = await jc(async () => {
-        const { createWalletClient: y, custom: b, publicActions: w } = await import("./index-C5N31WYP.js").then(async (m) => {
+        const { createWalletClient: y, custom: b, publicActions: w } = await import("./index-C4kNZ5yJ.js").then(async (m) => {
           await m.__tla;
           return m;
         }).then((B) => B.i);
