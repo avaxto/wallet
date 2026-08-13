@@ -20359,7 +20359,7 @@ ${ptt(f)}`), super(t.shortMessage, {
       };
     } catch (D) {
       const R = Wnt(D), { offchainLookup: M, offchainLookupSignature: F } = await Wc(async () => {
-        const { offchainLookup: O, offchainLookupSignature: L } = await import("./index-B9HAc4_y.js").then(async (m10) => {
+        const { offchainLookup: O, offchainLookupSignature: L } = await import("./index-DMXH1L_q.js").then(async (m10) => {
           await m10.__tla;
           return m10;
         }).then((H) => H.c);
@@ -133430,7 +133430,7 @@ ${Dee(this.cause)}` : this.toString();
     const i = "0x" + e.getEvmAddress();
     if (e.type === "injected") {
       const h = e.provider, { createWalletClient: g, custom: p, publicActions: v } = await Wc(async () => {
-        const { createWalletClient: b, custom: w, publicActions: B } = await import("./index-B9HAc4_y.js").then(async (m) => {
+        const { createWalletClient: b, custom: w, publicActions: B } = await import("./index-DMXH1L_q.js").then(async (m) => {
           await m.__tla;
           return m;
         }).then((C) => C.i);
@@ -134154,7 +134154,7 @@ ${Dee(this.cause)}` : this.toString();
     static async sendErc721(t, n, r, a, s, i, o) {
       if (t.type === "injected") {
         const d = t, f = "0x" + t.getEvmAddress(), h = s.data.address, g = n, p = "0x23b872dd", v = f.replace("0x", "").padStart(64, "0"), m = g.replace("0x", "").padStart(64, "0"), y = BigInt(i).toString(16).padStart(64, "0"), b = p + v + m + y, { createWalletClient: w, custom: B, publicActions: C } = await Wc(async () => {
-          const { createWalletClient: P, custom: U, publicActions: D } = await import("./index-B9HAc4_y.js").then(async (m10) => {
+          const { createWalletClient: P, custom: U, publicActions: D } = await import("./index-DMXH1L_q.js").then(async (m10) => {
             await m10.__tla;
             return m10;
           }).then((R) => R.i);
@@ -142139,7 +142139,7 @@ ${Dee(this.cause)}` : this.toString();
       }, l);
     }
   }
-  const Ane = "/assets/AVXTO_Icon-C4PhuO-v.png", Ian = 1e4, wMe = 1e4, Ean = 8, Ban = 1e3, IMe = "0.0.89", EMe = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", Can = new se(1e6), BMe = "AVXTO", CMe = Ane, xMe = "AVAX Toolbox", TMe = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", xan = new se(1e6), SMe = "SMTK", kMe = Ane, RMe = "SomeToken", qU = {
+  const Ane = "/assets/AVXTO_Icon-C4PhuO-v.png", Ian = 1e4, wMe = 1e4, Ean = 8, Ban = 1e3, IMe = "0.0.91", EMe = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", Can = new se(1e6), BMe = "AVXTO", CMe = Ane, xMe = "AVAX Toolbox", TMe = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", xan = new se(1e6), SMe = "SMTK", kMe = Ane, RMe = "SomeToken", qU = {
     pollingIntervals: {
       xChain: Ian,
       cChain: wMe
@@ -168713,7 +168713,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
   async function h3n(e, t, n, r) {
     const a = "0x" + e.getEvmAddress(), s = e.provider, { createWalletClient: i, custom: o, publicActions: A } = await Wc(async () => {
-      const { createWalletClient: d, custom: f, publicActions: h } = await import("./index-B9HAc4_y.js").then(async (m) => {
+      const { createWalletClient: d, custom: f, publicActions: h } = await import("./index-DMXH1L_q.js").then(async (m) => {
         await m.__tla;
         return m;
       }).then((g) => g.i);
