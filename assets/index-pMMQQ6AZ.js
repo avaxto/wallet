@@ -20329,7 +20329,7 @@ ${dtt(f)}`), super(t.shortMessage, {
       };
     } catch (D) {
       const R = qnt(D), { offchainLookup: M, offchainLookupSignature: F } = await Zc(async () => {
-        const { offchainLookup: Q, offchainLookupSignature: L } = await import("./index-RNMv288m.js").then(async (m2) => {
+        const { offchainLookup: Q, offchainLookupSignature: L } = await import("./index-DLMeCjno.js").then(async (m2) => {
           await m2.__tla;
           return m2;
         }).then((G) => G.c);
@@ -106802,7 +106802,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         placeholder: e.placeholder,
         "onUpdate:modelValue": t[0] || (t[0] = (A) => e.pk = A),
         onInput: t[1] || (t[1] = (...A) => e.oninput && e.oninput(...A)),
-        disabled: e.disabled
+        disabled: e.disabled,
+        autocomplete: "off",
+        name: "qr-in-field",
+        "data-1p-ignore": "",
+        "data-lpignore": "true"
       }, null, 40, XDt), [
         [
           Mn,
@@ -106818,7 +106822,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     ],
     [
       "__scopeId",
-      "data-v-cbb0aa1f"
+      "data-v-9e01f5dd"
     ]
   ]), WDt = je({
     name: "CopyText",
@@ -133403,7 +133407,7 @@ ${Dee(this.cause)}` : this.toString();
     const i = "0x" + e.getEvmAddress();
     if (e.type === "injected") {
       const h = e.provider, { createWalletClient: g, custom: p, publicActions: v } = await Zc(async () => {
-        const { createWalletClient: b, custom: w, publicActions: B } = await import("./index-RNMv288m.js").then(async (m) => {
+        const { createWalletClient: b, custom: w, publicActions: B } = await import("./index-DLMeCjno.js").then(async (m) => {
           await m.__tla;
           return m;
         }).then((C) => C.i);
@@ -134127,7 +134131,7 @@ ${Dee(this.cause)}` : this.toString();
     static async sendErc721(t, n, r, a, s, i, o) {
       if (t.type === "injected") {
         const d = t, f = "0x" + t.getEvmAddress(), h = s.data.address, g = n, p = "0x23b872dd", v = f.replace("0x", "").padStart(64, "0"), m = g.replace("0x", "").padStart(64, "0"), y = BigInt(i).toString(16).padStart(64, "0"), b = p + v + m + y, { createWalletClient: w, custom: B, publicActions: C } = await Zc(async () => {
-          const { createWalletClient: P, custom: U, publicActions: D } = await import("./index-RNMv288m.js").then(async (m2) => {
+          const { createWalletClient: P, custom: U, publicActions: D } = await import("./index-DLMeCjno.js").then(async (m2) => {
             await m2.__tla;
             return m2;
           }).then((R) => R.i);
@@ -137081,7 +137085,8 @@ ${Dee(this.cause)}` : this.toString();
       E("form", {
         onSubmit: t[2] || (t[2] = Ki((...A) => e.download && e.download(...A), [
           "prevent"
-        ]))
+        ])),
+        autocomplete: "off"
       }, [
         t[4] || (t[4] = E("label", null, "Password (min 9 characters)", -1)),
         V(i, {
@@ -137093,7 +137098,8 @@ ${Dee(this.cause)}` : this.toString();
           outlined: "",
           dense: "",
           class: "formIn",
-          height: "40"
+          height: "40",
+          autocomplete: "new-password"
         }, null, 8, [
           "modelValue"
         ]),
@@ -137107,7 +137113,8 @@ ${Dee(this.cause)}` : this.toString();
           outlined: "",
           dense: "",
           class: "formIn",
-          height: "40"
+          height: "40",
+          autocomplete: "new-password"
         }, null, 8, [
           "modelValue"
         ]),
@@ -137140,7 +137147,7 @@ ${Dee(this.cause)}` : this.toString();
     ],
     [
       "__scopeId",
-      "data-v-4789893b"
+      "data-v-39180c34"
     ]
   ]), __t = je({
     name: "ExportKeys",
@@ -138373,7 +138380,8 @@ ${Dee(this.cause)}` : this.toString();
       E("form", {
         onSubmit: t[3] || (t[3] = Ki((...c) => e.importKeyfile && e.importKeyfile(...c), [
           "prevent"
-        ]))
+        ])),
+        autocomplete: "off"
       }, [
         V(i, {
           onChange: e.onfile,
@@ -138391,7 +138399,8 @@ ${Dee(this.cause)}` : this.toString();
           "hide-details": "",
           type: "password",
           modelValue: e.pass,
-          "onUpdate:modelValue": t[0] || (t[0] = (c) => e.pass = c)
+          "onUpdate:modelValue": t[0] || (t[0] = (c) => e.pass = c),
+          autocomplete: "new-password"
         }, null, 8, [
           "placeholder",
           "modelValue"
@@ -138432,7 +138441,7 @@ ${Dee(this.cause)}` : this.toString();
     ],
     [
       "__scopeId",
-      "data-v-f8acd907"
+      "data-v-21d7fa74"
     ]
   ]), pen = je({
     name: "AddKeyString",
@@ -138482,7 +138491,8 @@ ${Dee(this.cause)}` : this.toString();
       E("form", {
         onSubmit: t[3] || (t[3] = Ki((...l) => e.addKey && e.addKey(...l), [
           "prevent"
-        ]))
+        ])),
+        autocomplete: "off"
       }, [
         V(i, {
           onChange: e.validateQR,
@@ -138529,7 +138539,7 @@ ${Dee(this.cause)}` : this.toString();
     ],
     [
       "__scopeId",
-      "data-v-263a5752"
+      "data-v-901b46ee"
     ]
   ]), yen = je({
     name: "AddMnemonic",
@@ -139048,7 +139058,6 @@ ${Dee(this.cause)}` : this.toString();
       "justify-content": "center"
     }
   }, Len = [
-    "name",
     "disabled"
   ], Gen = [
     "placeholder"
@@ -139074,7 +139083,8 @@ ${Dee(this.cause)}` : this.toString();
             E("form", {
               onSubmit: t[3] || (t[3] = Ki((...l) => e.submit && e.submit(...l), [
                 "prevent"
-              ]))
+              ])),
+              autocomplete: "off"
             }, [
               E("div", Ven, [
                 V(i, {
@@ -139086,9 +139096,12 @@ ${Dee(this.cause)}` : this.toString();
               E("p", null, W(e.$t("keys.save_account.desc")), 1),
               pt(E("input", {
                 "onUpdate:modelValue": t[0] || (t[0] = (l) => e.accountName = l),
-                name: e.$t("keys.save_account.placeholder_1"),
+                name: "save-acct-field-a",
                 placeholder: "Account Name",
-                disabled: e.existsInLocalStorage
+                disabled: e.existsInLocalStorage,
+                autocomplete: "off",
+                "data-1p-ignore": "",
+                "data-lpignore": "true"
               }, null, 8, Len), [
                 [
                   Mn,
@@ -139098,7 +139111,8 @@ ${Dee(this.cause)}` : this.toString();
               pt(E("input", {
                 type: "password",
                 placeholder: e.$t("keys.save_account.placeholder_2"),
-                "onUpdate:modelValue": t[1] || (t[1] = (l) => e.password = l)
+                "onUpdate:modelValue": t[1] || (t[1] = (l) => e.password = l),
+                autocomplete: "new-password"
               }, null, 8, Gen), [
                 [
                   Mn,
@@ -139108,7 +139122,8 @@ ${Dee(this.cause)}` : this.toString();
               pt(E("input", {
                 type: "password",
                 placeholder: e.$t("keys.save_account.placeholder_3"),
-                "onUpdate:modelValue": t[2] || (t[2] = (l) => e.password_confirm = l)
+                "onUpdate:modelValue": t[2] || (t[2] = (l) => e.password_confirm = l),
+                autocomplete: "new-password"
               }, null, 8, Hen), [
                 [
                   Mn,
@@ -139151,7 +139166,7 @@ ${Dee(this.cause)}` : this.toString();
     ],
     [
       "__scopeId",
-      "data-v-8f4b6e21"
+      "data-v-c9c8fedd"
     ]
   ]), Zen = je({
     name: "ChangePassword",
@@ -139194,13 +139209,15 @@ ${Dee(this.cause)}` : this.toString();
       onSubmit: t[3] || (t[3] = Ki((...o) => e.submit && e.submit(...o), [
         "prevent"
       ])),
-      class: "change_pass_form"
+      class: "change_pass_form",
+      autocomplete: "off"
     }, [
       pt(E("input", {
         placeholder: "Old Password",
         type: "password",
         class: "single_line_input",
-        "onUpdate:modelValue": t[0] || (t[0] = (o) => e.passOld = o)
+        "onUpdate:modelValue": t[0] || (t[0] = (o) => e.passOld = o),
+        autocomplete: "new-password"
       }, null, 512), [
         [
           Mn,
@@ -139211,7 +139228,8 @@ ${Dee(this.cause)}` : this.toString();
         placeholder: "New Password",
         type: "password",
         class: "single_line_input",
-        "onUpdate:modelValue": t[1] || (t[1] = (o) => e.pass = o)
+        "onUpdate:modelValue": t[1] || (t[1] = (o) => e.pass = o),
+        autocomplete: "new-password"
       }, null, 512), [
         [
           Mn,
@@ -139222,7 +139240,8 @@ ${Dee(this.cause)}` : this.toString();
         placeholder: "Confirm Password",
         type: "password",
         class: "single_line_input",
-        "onUpdate:modelValue": t[2] || (t[2] = (o) => e.passConfirm = o)
+        "onUpdate:modelValue": t[2] || (t[2] = (o) => e.passConfirm = o),
+        autocomplete: "new-password"
       }, null, 512), [
         [
           Mn,
@@ -139256,7 +139275,7 @@ ${Dee(this.cause)}` : this.toString();
     ],
     [
       "__scopeId",
-      "data-v-54f56336"
+      "data-v-22e0d2e3"
     ]
   ]), Yen = je({
     name: "DeleteAccount",
@@ -139286,13 +139305,15 @@ ${Dee(this.cause)}` : this.toString();
     return H(), Y("form", {
       onSubmit: t[1] || (t[1] = Ki((...o) => e.submit && e.submit(...o), [
         "prevent"
-      ]))
+      ])),
+      autocomplete: "off"
     }, [
       pt(E("input", {
         class: "single_line_input",
         type: "password",
         "onUpdate:modelValue": t[0] || (t[0] = (o) => e.pass = o),
-        placeholder: "Password"
+        placeholder: "Password",
+        autocomplete: "new-password"
       }, null, 512), [
         [
           Mn,
@@ -139326,7 +139347,7 @@ ${Dee(this.cause)}` : this.toString();
     ],
     [
       "__scopeId",
-      "data-v-711b9267"
+      "data-v-5222d973"
     ]
   ]), $en = je({
     name: "SaveKeys",
@@ -139359,14 +139380,16 @@ ${Dee(this.cause)}` : this.toString();
     return H(), Y("form", {
       onSubmit: t[1] || (t[1] = Ki((...o) => e.submit && e.submit(...o), [
         "prevent"
-      ]))
+      ])),
+      autocomplete: "off"
     }, [
       t[3] || (t[3] = E("p", null, "You have unsaved keys on your account.", -1)),
       pt(E("input", {
         type: "password",
         class: "single_line_input",
         placeholder: "Password",
-        "onUpdate:modelValue": t[0] || (t[0] = (o) => e.pass = o)
+        "onUpdate:modelValue": t[0] || (t[0] = (o) => e.pass = o),
+        autocomplete: "new-password"
       }, null, 512), [
         [
           Mn,
@@ -139400,7 +139423,7 @@ ${Dee(this.cause)}` : this.toString();
     ],
     [
       "__scopeId",
-      "data-v-822e63cf"
+      "data-v-7c35930e"
     ]
   ]), rtn = je({
     name: "AccountSettingsModal",
@@ -142088,7 +142111,7 @@ ${Dee(this.cause)}` : this.toString();
       }, l);
     }
   }
-  const Ane = "/assets/AVXTO_Icon-C4PhuO-v.png", fan = 1e4, BMe = 1e4, han = 8, gan = 1e3, CMe = "0.0.95", xMe = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", pan = new se(1e6), TMe = "AVXTO", SMe = Ane, kMe = "AVAX Toolbox", RMe = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", man = new se(1e6), DMe = "SMTK", UMe = Ane, PMe = "SomeToken", qU = {
+  const Ane = "/assets/AVXTO_Icon-C4PhuO-v.png", fan = 1e4, BMe = 1e4, han = 8, gan = 1e3, CMe = "0.0.96", xMe = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", pan = new se(1e6), TMe = "AVXTO", SMe = Ane, kMe = "AVAX Toolbox", RMe = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", man = new se(1e6), DMe = "SMTK", UMe = Ane, PMe = "SomeToken", qU = {
     pollingIntervals: {
       xChain: fan,
       cChain: BMe
@@ -148880,7 +148903,8 @@ ${Dee(this.cause)}` : this.toString();
         E("form", {
           onSubmit: t[3] || (t[3] = Ki((...u) => e.access && e.access(...u), [
             "prevent"
-          ]))
+          ])),
+          autocomplete: "off"
         }, [
           e.file ? (H(), ht(o, {
             key: 0,
@@ -148892,7 +148916,8 @@ ${Dee(this.cause)}` : this.toString();
             type: "password",
             modelValue: e.pass,
             "onUpdate:modelValue": t[0] || (t[0] = (u) => e.pass = u),
-            "hide-details": ""
+            "hide-details": "",
+            autocomplete: "new-password"
           }, null, 8, [
             "label",
             "modelValue"
@@ -148945,7 +148970,7 @@ ${Dee(this.cause)}` : this.toString();
     ],
     [
       "__scopeId",
-      "data-v-e5c5ad2e"
+      "data-v-fa2e07a2"
     ]
   ]), Xve = 24, uAn = je({
     name: "MnemonicPasswordInput",
@@ -149215,7 +149240,8 @@ ${Dee(this.cause)}` : this.toString();
         E("form", {
           onSubmit: t[3] || (t[3] = Ki((...c) => e.access && e.access(...c), [
             "prevent"
-          ]))
+          ])),
+          autocomplete: "off"
         }, [
           V(i, {
             class: "pass",
@@ -149226,7 +149252,8 @@ ${Dee(this.cause)}` : this.toString();
             type: "password",
             modelValue: e.privatekey,
             "onUpdate:modelValue": t[0] || (t[0] = (c) => e.privatekey = c),
-            "hide-details": ""
+            "hide-details": "",
+            autocomplete: "off"
           }, null, 8, [
             "modelValue"
           ]),
@@ -149280,7 +149307,7 @@ ${Dee(this.cause)}` : this.toString();
     ],
     [
       "__scopeId",
-      "data-v-fc36d541"
+      "data-v-1835e20c"
     ]
   ]), MAn = /* @__PURE__ */ new Set([
     "link",
@@ -155441,7 +155468,8 @@ Minimum version required to store current data is: ` + M + `.
       E("form", {
         onSubmit: t[7] || (t[7] = Ki((...o) => e.submit && e.submit(...o), [
           "prevent"
-        ]))
+        ])),
+        autocomplete: "off"
       }, [
         E("div", null, [
           E("label", null, W(e.$t("network.custom_page.label1")), 1),
@@ -155449,7 +155477,11 @@ Minimum version required to store current data is: ` + M + `.
             type: "text",
             placeholder: "Network Name",
             "onUpdate:modelValue": t[0] || (t[0] = (o) => e.name = o),
-            "data-cy": "custom-network-name"
+            "data-cy": "custom-network-name",
+            autocomplete: "off",
+            name: "custom-net-field-a",
+            "data-1p-ignore": "",
+            "data-lpignore": "true"
           }, null, 512), [
             [
               Mn,
@@ -155464,7 +155496,11 @@ Minimum version required to store current data is: ` + M + `.
             type: "text",
             placeholder: "http://localhost:9650",
             "onUpdate:modelValue": t[1] || (t[1] = (o) => e.url = o),
-            onInput: t[2] || (t[2] = (...o) => e.checkUrl && e.checkUrl(...o))
+            onInput: t[2] || (t[2] = (...o) => e.checkUrl && e.checkUrl(...o)),
+            autocomplete: "off",
+            name: "custom-net-field-b",
+            "data-1p-ignore": "",
+            "data-lpignore": "true"
           }, null, 544), [
             [
               Mn,
@@ -155479,7 +155515,11 @@ Minimum version required to store current data is: ` + M + `.
             type: "text",
             placeholder: "www",
             "onUpdate:modelValue": t[3] || (t[3] = (o) => e.explorer_api = o),
-            onInput: t[4] || (t[4] = (...o) => e.cleanExplorerUrl && e.cleanExplorerUrl(...o))
+            onInput: t[4] || (t[4] = (...o) => e.cleanExplorerUrl && e.cleanExplorerUrl(...o)),
+            autocomplete: "off",
+            name: "custom-net-field-c",
+            "data-1p-ignore": "",
+            "data-lpignore": "true"
           }, null, 544), [
             [
               Mn,
@@ -155493,7 +155533,11 @@ Minimum version required to store current data is: ` + M + `.
             type: "text",
             placeholder: "www",
             "onUpdate:modelValue": t[5] || (t[5] = (o) => e.explorer_site = o),
-            onInput: t[6] || (t[6] = (...o) => e.cleanExplorerSite && e.cleanExplorerSite(...o))
+            onInput: t[6] || (t[6] = (...o) => e.cleanExplorerSite && e.cleanExplorerSite(...o)),
+            autocomplete: "off",
+            name: "custom-net-field-d",
+            "data-1p-ignore": "",
+            "data-lpignore": "true"
           }, null, 544), [
             [
               Mn,
@@ -155527,7 +155571,7 @@ Minimum version required to store current data is: ` + M + `.
     ],
     [
       "__scopeId",
-      "data-v-41cf8cb2"
+      "data-v-39e32694"
     ]
   ]), zfn = je({
     name: "ListPage",
@@ -155654,14 +155698,19 @@ Minimum version required to store current data is: ` + M + `.
         onSubmit: t[9] || (t[9] = Ki(() => {
         }, [
           "prevent"
-        ]))
+        ])),
+        autocomplete: "off"
       }, [
         E("div", null, [
           t[10] || (t[10] = E("label", null, "Network Name", -1)),
           pt(E("input", {
             type: "text",
             placeholder: "Network Name",
-            "onUpdate:modelValue": t[0] || (t[0] = (i) => e.name = i)
+            "onUpdate:modelValue": t[0] || (t[0] = (i) => e.name = i),
+            autocomplete: "off",
+            name: "edit-net-field-a",
+            "data-1p-ignore": "",
+            "data-lpignore": "true"
           }, null, 512), [
             [
               Mn,
@@ -155675,7 +155724,11 @@ Minimum version required to store current data is: ` + M + `.
             type: "text",
             placeholder: "http://localhost:9650",
             "onUpdate:modelValue": t[1] || (t[1] = (i) => e.url = i),
-            onInput: t[2] || (t[2] = (...i) => e.checkUrl && e.checkUrl(...i))
+            onInput: t[2] || (t[2] = (...i) => e.checkUrl && e.checkUrl(...i)),
+            autocomplete: "off",
+            name: "edit-net-field-b",
+            "data-1p-ignore": "",
+            "data-lpignore": "true"
           }, null, 544), [
             [
               Mn,
@@ -155690,7 +155743,11 @@ Minimum version required to store current data is: ` + M + `.
             type: "text",
             placeholder: "www",
             "onUpdate:modelValue": t[3] || (t[3] = (i) => e.explorer_api = i),
-            onInput: t[4] || (t[4] = (...i) => e.cleanExplorerUrl && e.cleanExplorerUrl(...i))
+            onInput: t[4] || (t[4] = (...i) => e.cleanExplorerUrl && e.cleanExplorerUrl(...i)),
+            autocomplete: "off",
+            name: "edit-net-field-c",
+            "data-1p-ignore": "",
+            "data-lpignore": "true"
           }, null, 544), [
             [
               Mn,
@@ -155704,7 +155761,11 @@ Minimum version required to store current data is: ` + M + `.
             type: "text",
             placeholder: "www",
             "onUpdate:modelValue": t[5] || (t[5] = (i) => e.explorer_site = i),
-            onInput: t[6] || (t[6] = (...i) => e.cleanExplorerSite && e.cleanExplorerSite(...i))
+            onInput: t[6] || (t[6] = (...i) => e.cleanExplorerSite && e.cleanExplorerSite(...i)),
+            autocomplete: "off",
+            name: "edit-net-field-d",
+            "data-1p-ignore": "",
+            "data-lpignore": "true"
           }, null, 544), [
             [
               Mn,
@@ -155718,7 +155779,11 @@ Minimum version required to store current data is: ` + M + `.
             pt(E("input", {
               type: "number",
               placeholder: "Network ID",
-              "onUpdate:modelValue": t[7] || (t[7] = (i) => e.networkId = i)
+              "onUpdate:modelValue": t[7] || (t[7] = (i) => e.networkId = i),
+              autocomplete: "off",
+              name: "edit-net-field-e",
+              "data-1p-ignore": "",
+              "data-lpignore": "true"
             }, null, 512), [
               [
                 Mn,
@@ -155746,7 +155811,7 @@ Minimum version required to store current data is: ` + M + `.
     ],
     [
       "__scopeId",
-      "data-v-4ee80fe6"
+      "data-v-0e6d9b8d"
     ]
   ]), t0n = je({
     name: "NetworkMenu",
@@ -157319,7 +157384,11 @@ Minimum version required to store current data is: ` + M + `.
             t[4] || (t[4] = E("label", null, "Token Contract Address", -1)),
             pt(E("input", {
               "onUpdate:modelValue": t[0] || (t[0] = (A) => e.tokenAddress = A),
-              placeholder: "0x"
+              placeholder: "0x",
+              autocomplete: "off",
+              name: "add20-field-a",
+              "data-1p-ignore": "",
+              "data-lpignore": "true"
             }, null, 512), [
               [
                 Mn,
@@ -157336,7 +157405,11 @@ Minimum version required to store current data is: ` + M + `.
               t[5] || (t[5] = E("label", null, "Token Name", -1)),
               pt(E("input", {
                 "onUpdate:modelValue": t[1] || (t[1] = (A) => e.name = A),
-                disabled: ""
+                disabled: "",
+                autocomplete: "off",
+                name: "add20-field-b",
+                "data-1p-ignore": "",
+                "data-lpignore": "true"
               }, null, 512), [
                 [
                   Mn,
@@ -157348,7 +157421,11 @@ Minimum version required to store current data is: ` + M + `.
               t[6] || (t[6] = E("label", null, "Token Symbol", -1)),
               pt(E("input", {
                 "onUpdate:modelValue": t[2] || (t[2] = (A) => e.symbol = A),
-                disabled: ""
+                disabled: "",
+                autocomplete: "off",
+                name: "add20-field-c",
+                "data-1p-ignore": "",
+                "data-lpignore": "true"
               }, null, 512), [
                 [
                   Mn,
@@ -157361,7 +157438,11 @@ Minimum version required to store current data is: ` + M + `.
               pt(E("input", {
                 type: "number",
                 "onUpdate:modelValue": t[3] || (t[3] = (A) => e.denomination = A),
-                disabled: ""
+                disabled: "",
+                autocomplete: "off",
+                name: "add20-field-d",
+                "data-1p-ignore": "",
+                "data-lpignore": "true"
               }, null, 512), [
                 [
                   Mn,
@@ -157401,7 +157482,7 @@ Minimum version required to store current data is: ` + M + `.
     ],
     [
       "__scopeId",
-      "data-v-5d116af9"
+      "data-v-3f24b122"
     ]
   ]), dhn = je({
     name: "TokenListModal",
@@ -158004,7 +158085,11 @@ Minimum version required to store current data is: ` + M + `.
             t[3] || (t[3] = E("label", null, "ERC721 Contract Address", -1)),
             pt(E("input", {
               "onUpdate:modelValue": t[0] || (t[0] = (l) => e.tokenAddress = l),
-              placeholder: "0x"
+              placeholder: "0x",
+              autocomplete: "off",
+              name: "add721-field-a",
+              "data-1p-ignore": "",
+              "data-lpignore": "true"
             }, null, 512), [
               [
                 Mn,
@@ -158021,7 +158106,11 @@ Minimum version required to store current data is: ` + M + `.
               t[4] || (t[4] = E("label", null, "Collectible Name", -1)),
               pt(E("input", {
                 "onUpdate:modelValue": t[1] || (t[1] = (l) => e.name = l),
-                disabled: ""
+                disabled: "",
+                autocomplete: "off",
+                name: "add721-field-b",
+                "data-1p-ignore": "",
+                "data-lpignore": "true"
               }, null, 512), [
                 [
                   Mn,
@@ -158033,7 +158122,11 @@ Minimum version required to store current data is: ` + M + `.
               t[5] || (t[5] = E("label", null, "Collectible Symbol", -1)),
               pt(E("input", {
                 "onUpdate:modelValue": t[2] || (t[2] = (l) => e.symbol = l),
-                disabled: ""
+                disabled: "",
+                autocomplete: "off",
+                name: "add721-field-c",
+                "data-1p-ignore": "",
+                "data-lpignore": "true"
               }, null, 512), [
                 [
                   Mn,
@@ -158092,7 +158185,7 @@ Minimum version required to store current data is: ` + M + `.
     ],
     [
       "__scopeId",
-      "data-v-3323e2ff"
+      "data-v-4982846b"
     ]
   ]), lgn = je({
     name: "ERC721ViewModal",
@@ -159697,7 +159790,8 @@ Minimum version required to store current data is: ` + M + `.
           onSubmit: t[13] || (t[13] = Ki(() => {
           }, [
             "prevent"
-          ]))
+          ])),
+          autocomplete: "off"
         }, [
           V(Fv, {
             name: "fade",
@@ -160078,7 +160172,7 @@ Minimum version required to store current data is: ` + M + `.
     ],
     [
       "__scopeId",
-      "data-v-183ac1c7"
+      "data-v-c47ca22f"
     ]
   ]), Vmn = je({
     name: "ValidatorRow",
@@ -168103,7 +168197,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     ],
     [
       "__scopeId",
-      "data-v-37edc4bf"
+      "data-v-28cc1e30"
     ]
   ]);
   function mBn(e) {
@@ -168937,7 +169031,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
   async function _Bn(e, t, n, r) {
     const a = "0x" + e.getEvmAddress(), s = e.provider, { createWalletClient: i, custom: o, publicActions: A } = await Zc(async () => {
-      const { createWalletClient: d, custom: f, publicActions: h } = await import("./index-RNMv288m.js").then(async (m) => {
+      const { createWalletClient: d, custom: f, publicActions: h } = await import("./index-DLMeCjno.js").then(async (m) => {
         await m.__tla;
         return m;
       }).then((g) => g.i);
@@ -169100,7 +169194,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             type: "text",
             placeholder: "My Token",
             disabled: e.isDeploying,
-            maxlength: "64"
+            maxlength: "64",
+            autocomplete: "off",
+            name: "tl-field-a",
+            "data-1p-ignore": "",
+            "data-lpignore": "true"
           }, null, 8, aCn), [
             [
               Mn,
@@ -169116,7 +169214,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             placeholder: "MTK",
             disabled: e.isDeploying,
             maxlength: "12",
-            onInput: t[2] || (t[2] = (i) => e.form.symbol = e.form.symbol.toUpperCase())
+            onInput: t[2] || (t[2] = (i) => e.form.symbol = e.form.symbol.toUpperCase()),
+            autocomplete: "off",
+            name: "tl-field-b",
+            "data-1p-ignore": "",
+            "data-lpignore": "true"
           }, null, 40, iCn), [
             [
               Mn,
@@ -169132,7 +169234,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
               type: "number",
               min: "0",
               max: "18",
-              disabled: e.isDeploying
+              disabled: e.isDeploying,
+              autocomplete: "off",
+              name: "tl-field-c",
+              "data-1p-ignore": "",
+              "data-lpignore": "true"
             }, null, 8, lCn), [
               [
                 Mn,
@@ -169150,7 +169256,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
               "onUpdate:modelValue": t[4] || (t[4] = (i) => e.form.initialSupply = i),
               type: "text",
               placeholder: "1000000",
-              disabled: e.isDeploying
+              disabled: e.isDeploying,
+              autocomplete: "off",
+              name: "tl-field-d",
+              "data-1p-ignore": "",
+              "data-lpignore": "true"
             }, null, 8, uCn), [
               [
                 Mn,
@@ -169168,7 +169278,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             "onUpdate:modelValue": t[5] || (t[5] = (i) => e.form.maxSupply = i),
             type: "text",
             placeholder: "1000000",
-            disabled: e.isDeploying
+            disabled: e.isDeploying,
+            autocomplete: "off",
+            name: "tl-field-e",
+            "data-1p-ignore": "",
+            "data-lpignore": "true"
           }, null, 8, fCn), [
             [
               Mn,
@@ -169225,7 +169339,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     ],
     [
       "__scopeId",
-      "data-v-162d7bfa"
+      "data-v-2da7a573"
     ]
   ]), TCn = je({
     name: "Swap",
@@ -170237,7 +170351,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
               placeholder: "Token address (0x\u2026) or symbol (e.g. USDC)",
               spellcheck: "false",
               disabled: e.isLocked,
-              onInput: t[2] || (t[2] = (...i) => e.onTargetChange && e.onTargetChange(...i))
+              onInput: t[2] || (t[2] = (...i) => e.onTargetChange && e.onTargetChange(...i)),
+              autocomplete: "off",
+              name: "iceberg-field-a",
+              "data-1p-ignore": "",
+              "data-lpignore": "true"
             }, null, 40, Q3n), [
               [
                 Mn,
@@ -170563,7 +170681,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     ],
     [
       "__scopeId",
-      "data-v-beea7291"
+      "data-v-a681a80d"
     ]
   ]), Qxn = 3e5, Vxn = 10, Lxn = 50, Gxn = je({
     name: "avxto",
@@ -170926,13 +171044,15 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         E("form", {
           onSubmit: t[3] || (t[3] = Ki((...c) => e.access && e.access(...c), [
             "prevent"
-          ]))
+          ])),
+          autocomplete: "off"
         }, [
           pt(E("input", {
             class: "single_line_input hover_border pass",
             type: "password",
             placeholder: "Password",
-            "onUpdate:modelValue": t[0] || (t[0] = (c) => e.password = c)
+            "onUpdate:modelValue": t[0] || (t[0] = (c) => e.password = c),
+            autocomplete: "new-password"
           }, null, 512), [
             [
               Mn,
@@ -170992,7 +171112,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     ],
     [
       "__scopeId",
-      "data-v-9309a36d"
+      "data-v-4defe7e5"
     ]
   ]), RTn = je({
     name: "NumberCounter",
@@ -172176,7 +172296,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         E("form", {
           onSubmit: t[2] || (t[2] = Ki((...A) => e.access && e.access(...A), [
             "prevent"
-          ]))
+          ])),
+          autocomplete: "off"
         }, [
           t[4] || (t[4] = E("p", {
             class: "_label"
@@ -172190,7 +172311,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             type: "password",
             modelValue: e.xpubXP,
             "onUpdate:modelValue": t[0] || (t[0] = (A) => e.xpubXP = A),
-            "hide-details": ""
+            "hide-details": "",
+            autocomplete: "off"
           }, null, 8, [
             "modelValue"
           ]),
@@ -172210,7 +172332,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             flat: "",
             modelValue: e.evmAddr,
             "onUpdate:modelValue": t[1] || (t[1] = (A) => e.evmAddr = A),
-            "hide-details": ""
+            "hide-details": "",
+            autocomplete: "off"
           }, null, 8, [
             "modelValue"
           ]),
@@ -172244,7 +172367,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     ],
     [
       "__scopeId",
-      "data-v-c4ac723c"
+      "data-v-bbc2ac40"
     ]
   ]), c5n = je({
     name: "Injected",
@@ -174886,7 +175009,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
               "onUpdate:modelValue": t[1] || (t[1] = (A) => e.rlMaxRequests = A),
               min: "1",
               max: "1000",
-              class: "field"
+              class: "field",
+              autocomplete: "off",
+              name: "config-rl-field-a",
+              "data-1p-ignore": "",
+              "data-lpignore": "true"
             }, null, 512), [
               [
                 Mn,
@@ -174905,7 +175032,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
               "onUpdate:modelValue": t[2] || (t[2] = (A) => e.rlWindowMs = A),
               min: "100",
               max: "60000",
-              class: "field"
+              class: "field",
+              autocomplete: "off",
+              name: "config-rl-field-b",
+              "data-1p-ignore": "",
+              "data-lpignore": "true"
             }, null, 512), [
               [
                 Mn,
@@ -174946,7 +175077,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
               type: "text",
               "onUpdate:modelValue": t[3] || (t[3] = (A) => e.netUrl = A),
               placeholder: "https://api.avax.network:443",
-              class: "field"
+              class: "field",
+              autocomplete: "off",
+              name: "config-net-field-a",
+              "data-1p-ignore": "",
+              "data-lpignore": "true"
             }, null, 512), [
               [
                 Mn,
@@ -174960,7 +175095,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
               type: "text",
               "onUpdate:modelValue": t[4] || (t[4] = (A) => e.netExplorerApi = A),
               placeholder: "https://explorerapi.avax.network",
-              class: "field"
+              class: "field",
+              autocomplete: "off",
+              name: "config-net-field-b",
+              "data-1p-ignore": "",
+              "data-lpignore": "true"
             }, null, 512), [
               [
                 Mn,
@@ -174974,7 +175113,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
               type: "text",
               "onUpdate:modelValue": t[5] || (t[5] = (A) => e.netExplorerSite = A),
               placeholder: "https://explorer-xp.avax.network",
-              class: "field"
+              class: "field",
+              autocomplete: "off",
+              name: "config-net-field-c",
+              "data-1p-ignore": "",
+              "data-lpignore": "true"
             }, null, 512), [
               [
                 Mn,
@@ -175011,7 +175154,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     ],
     [
       "__scopeId",
-      "data-v-4cc918ce"
+      "data-v-568c0d04"
     ]
   ]), Lkn = je({
     name: "InsufficientBalance",
@@ -177620,7 +177763,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     ],
     [
       "__scopeId",
-      "data-v-e8725e4e"
+      "data-v-a4dfa123"
     ]
   ]), R4n = je({
     name: "LedgerUpgrade",
@@ -177856,7 +177999,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
               type: "password",
               placeholder: "Password",
               "onUpdate:modelValue": t[0] || (t[0] = (l) => e.password = l),
-              class: "password"
+              class: "password",
+              autocomplete: "new-password"
             }, null, 512), [
               [
                 Mn,
@@ -177911,7 +178055,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     ],
     [
       "__scopeId",
-      "data-v-6f01b954"
+      "data-v-4ae73f5b"
     ]
   ]), j4n = je({
     name: "LedgerWalletLoading",
@@ -178251,7 +178395,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
           E("form", {
             onSubmit: t[1] || (t[1] = Ki((...A) => e.submit && e.submit(...A), [
               "prevent"
-            ]))
+            ])),
+            autocomplete: "off"
           }, [
             t[4] || (t[4] = E("label", {
               for: "session_pw"
@@ -178327,7 +178472,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     ],
     [
       "__scopeId",
-      "data-v-a82f2bfc"
+      "data-v-a10ae4e5"
     ]
   ]), b8n = {
     components: {
