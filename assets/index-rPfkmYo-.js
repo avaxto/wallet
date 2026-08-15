@@ -20329,7 +20329,7 @@ ${Ttt(f)}`), super(t.shortMessage, {
       };
     } catch (R) {
       const D = art(R), { offchainLookup: M, offchainLookupSignature: F } = await Tl(async () => {
-        const { offchainLookup: Q, offchainLookupSignature: L } = await import("./index-DyeKsa5l.js").then(async (m2) => {
+        const { offchainLookup: Q, offchainLookupSignature: L } = await import("./index-DXfh-CeB.js").then(async (m2) => {
           await m2.__tla;
           return m2;
         }).then((H) => H.c);
@@ -133292,6 +133292,46 @@ ${Qee(this.cause)}` : this.toString();
       description: "Bridged representation of MakerDAO's decentralized USD-pegged stablecoin on the Avalanche C-Chain.",
       symbol: "DAI",
       websiteUrl: "https://makerdao.com"
+    },
+    {
+      contractAddress: "0x13A466998Ce03Db73aBc2d4DF3bBD845Ed1f28E7",
+      chainId: 43114,
+      name: "PHAR Token",
+      description: "Native token of Pharaoh Exchange, a concentrated-liquidity DEX on the Avalanche C-Chain.",
+      symbol: "PHAR",
+      websiteUrl: "https://phar.gg"
+    },
+    {
+      contractAddress: "0xE8164Ea89665DAb7a553e667F81F30CfDA736B9A",
+      chainId: 43114,
+      name: "xPHAR Token",
+      description: "Escrowed, vote-governance form of PHAR on Pharaoh Exchange.",
+      symbol: "xPHAR",
+      websiteUrl: "https://phar.gg"
+    },
+    {
+      contractAddress: "0x26e9dbe75aed331e41272bece932ff1b48926ca9",
+      chainId: 43114,
+      name: "p33",
+      description: "Token listed in Pharaoh Exchange's own contract-address registry on the Avalanche C-Chain.",
+      symbol: "p33",
+      websiteUrl: "https://phar.gg"
+    },
+    {
+      contractAddress: "0xB8d7710f7d8349a506b75dd184f05777c82dad0c",
+      chainId: 43114,
+      name: "The Arena",
+      description: "Token of Arena.social, a decentralized socialfi app on Avalanche where creators monetize their audience via share trading, tipping and exclusive communities.",
+      symbol: "ARENA",
+      websiteUrl: "https://arena.social"
+    },
+    {
+      contractAddress: "0x6e84a6216eA6dACC71eE8E6b0a5B7322EEbC0fDd",
+      chainId: 43114,
+      name: "LFJ (formerly Trader Joe)",
+      description: "Native token of LFJ, a decentralized exchange on Avalanche offering swapping, staking, yield farming and lending (Banker Joe).",
+      symbol: "JOE",
+      websiteUrl: "https://www.lfj.gg"
     }
   ], HPe = IYt;
   function XU(e) {
@@ -133590,7 +133630,7 @@ ${Qee(this.cause)}` : this.toString();
     const i = "0x" + e.getEvmAddress();
     if (e.type === "injected") {
       const h = e.provider, { createWalletClient: g, custom: p, publicActions: v } = await Tl(async () => {
-        const { createWalletClient: b, custom: w, publicActions: B } = await import("./index-DyeKsa5l.js").then(async (m) => {
+        const { createWalletClient: b, custom: w, publicActions: B } = await import("./index-DXfh-CeB.js").then(async (m) => {
           await m.__tla;
           return m;
         }).then((C) => C.i);
@@ -134322,7 +134362,7 @@ ${Qee(this.cause)}` : this.toString();
     static async sendErc721(t, n, r, a, s, i, o) {
       if (t.type === "injected") {
         const d = t, f = "0x" + t.getEvmAddress(), h = s.data.address, g = n, p = "0x23b872dd", v = f.replace("0x", "").padStart(64, "0"), m = g.replace("0x", "").padStart(64, "0"), y = BigInt(i).toString(16).padStart(64, "0"), b = p + v + m + y, { createWalletClient: w, custom: B, publicActions: C } = await Tl(async () => {
-          const { createWalletClient: U, custom: P, publicActions: R } = await import("./index-DyeKsa5l.js").then(async (m2) => {
+          const { createWalletClient: U, custom: P, publicActions: R } = await import("./index-DXfh-CeB.js").then(async (m2) => {
             await m2.__tla;
             return m2;
           }).then((D) => D.i);
@@ -142314,7 +142354,7 @@ ${Qee(this.cause)}` : this.toString();
       }, l);
     }
   }
-  const gne = "/assets/AVXTO_Icon-C4PhuO-v.png", Ran = 1e4, NMe = 1e4, Dan = 8, Uan = 1e3, FMe = "0.1.01", OMe = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", Pan = new se(1e6), QMe = "AVXTO", VMe = gne, LMe = "AVAX Toolbox", GMe = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", Man = new se(1e6), HMe = "SMTK", qMe = gne, zMe = "SomeToken", YU = {
+  const gne = "/assets/AVXTO_Icon-C4PhuO-v.png", Ran = 1e4, NMe = 1e4, Dan = 8, Uan = 1e3, FMe = "0.1.02", OMe = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", Pan = new se(1e6), QMe = "AVXTO", VMe = gne, LMe = "AVAX Toolbox", GMe = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", Man = new se(1e6), HMe = "SMTK", qMe = gne, zMe = "SomeToken", YU = {
     pollingIntervals: {
       xChain: Ran,
       cChain: NMe
@@ -169748,7 +169788,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
   async function YCn(e, t, n, r) {
     const a = "0x" + e.getEvmAddress(), s = e.provider, { createWalletClient: i, custom: o, publicActions: A } = await Tl(async () => {
-      const { createWalletClient: d, custom: f, publicActions: h } = await import("./index-DyeKsa5l.js").then(async (m) => {
+      const { createWalletClient: d, custom: f, publicActions: h } = await import("./index-DXfh-CeB.js").then(async (m) => {
         await m.__tla;
         return m;
       }).then((g) => g.i);
