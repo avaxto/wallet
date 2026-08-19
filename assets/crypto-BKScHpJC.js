@@ -837,114 +837,6 @@ const Buffer = buffer$1.Buffer, Buffer$1 = buffer$1.Buffer;
 function getDefaultExportFromCjs$1(t) {
   return t && t.__esModule && Object.prototype.hasOwnProperty.call(t, "default") ? t.default : t;
 }
-var browser$f = { exports: {} }, process = browser$f.exports = {}, cachedSetTimeout, cachedClearTimeout;
-function defaultSetTimout() {
-  throw new Error("setTimeout has not been defined");
-}
-function defaultClearTimeout() {
-  throw new Error("clearTimeout has not been defined");
-}
-(function() {
-  try {
-    typeof setTimeout == "function" ? cachedSetTimeout = setTimeout : cachedSetTimeout = defaultSetTimout;
-  } catch {
-    cachedSetTimeout = defaultSetTimout;
-  }
-  try {
-    typeof clearTimeout == "function" ? cachedClearTimeout = clearTimeout : cachedClearTimeout = defaultClearTimeout;
-  } catch {
-    cachedClearTimeout = defaultClearTimeout;
-  }
-})();
-function runTimeout(t) {
-  if (cachedSetTimeout === setTimeout) return setTimeout(t, 0);
-  if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) return cachedSetTimeout = setTimeout, setTimeout(t, 0);
-  try {
-    return cachedSetTimeout(t, 0);
-  } catch {
-    try {
-      return cachedSetTimeout.call(null, t, 0);
-    } catch {
-      return cachedSetTimeout.call(this, t, 0);
-    }
-  }
-}
-function runClearTimeout(t) {
-  if (cachedClearTimeout === clearTimeout) return clearTimeout(t);
-  if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) return cachedClearTimeout = clearTimeout, clearTimeout(t);
-  try {
-    return cachedClearTimeout(t);
-  } catch {
-    try {
-      return cachedClearTimeout.call(null, t);
-    } catch {
-      return cachedClearTimeout.call(this, t);
-    }
-  }
-}
-var queue = [], draining = false, currentQueue, queueIndex = -1;
-function cleanUpNextTick() {
-  !draining || !currentQueue || (draining = false, currentQueue.length ? queue = currentQueue.concat(queue) : queueIndex = -1, queue.length && drainQueue());
-}
-function drainQueue() {
-  if (!draining) {
-    var t = runTimeout(cleanUpNextTick);
-    draining = true;
-    for (var e = queue.length; e; ) {
-      for (currentQueue = queue, queue = []; ++queueIndex < e; ) currentQueue && currentQueue[queueIndex].run();
-      queueIndex = -1, e = queue.length;
-    }
-    currentQueue = null, draining = false, runClearTimeout(t);
-  }
-}
-process.nextTick = function(t) {
-  var e = new Array(arguments.length - 1);
-  if (arguments.length > 1) for (var a = 1; a < arguments.length; a++) e[a - 1] = arguments[a];
-  queue.push(new Item(t, e)), queue.length === 1 && !draining && runTimeout(drainQueue);
-};
-function Item(t, e) {
-  this.fun = t, this.array = e;
-}
-Item.prototype.run = function() {
-  this.fun.apply(null, this.array);
-};
-process.title = "browser";
-process.browser = true;
-process.env = {};
-process.argv = [];
-process.version = "";
-process.versions = {};
-function noop() {
-}
-process.on = noop;
-process.addListener = noop;
-process.once = noop;
-process.off = noop;
-process.removeListener = noop;
-process.removeAllListeners = noop;
-process.emit = noop;
-process.prependListener = noop;
-process.prependOnceListener = noop;
-process.listeners = function(t) {
-  return [];
-};
-process.binding = function(t) {
-  throw new Error("process.binding is not supported");
-};
-process.cwd = function() {
-  return "/";
-};
-process.chdir = function(t) {
-  throw new Error("process.chdir is not supported");
-};
-process.umask = function() {
-  return 0;
-};
-var browserExports = browser$f.exports;
-const process$1 = getDefaultExportFromCjs$1(browserExports);
-function getDefaultExportFromCjs(t) {
-  return t && t.__esModule && Object.prototype.hasOwnProperty.call(t, "default") ? t.default : t;
-}
 function getAugmentedNamespace(t) {
   if (Object.prototype.hasOwnProperty.call(t, "__esModule")) return t;
   var e = t.default;
@@ -2665,7 +2557,7 @@ function requireBn$9() {
   })(bn$j)), bn$j.exports;
 }
 var bnExports = requireBn$9();
-const BN$6 = getDefaultExportFromCjs(bnExports);
+const BN$6 = getDefaultExportFromCjs$1(bnExports);
 var inherits_browser$4 = { exports: {} }, hasRequiredInherits_browser;
 function requireInherits_browser() {
   return hasRequiredInherits_browser || (hasRequiredInherits_browser = 1, typeof Object.create == "function" ? inherits_browser$4.exports = function(e, a) {
@@ -3342,7 +3234,116 @@ function requireToBuffer$1() {
     throw new TypeError('The "data" argument must be a string, a Buffer, a Uint8Array, or a DataView');
   }, toBuffer_1$1;
 }
-var readableBrowser$2 = { exports: {} }, processNextickArgs = { exports: {} }, hasRequiredProcessNextickArgs;
+var readableBrowser$2 = { exports: {} };
+function getDefaultExportFromCjs(t) {
+  return t && t.__esModule && Object.prototype.hasOwnProperty.call(t, "default") ? t.default : t;
+}
+var browser$f = { exports: {} }, process = browser$f.exports = {}, cachedSetTimeout, cachedClearTimeout;
+function defaultSetTimout() {
+  throw new Error("setTimeout has not been defined");
+}
+function defaultClearTimeout() {
+  throw new Error("clearTimeout has not been defined");
+}
+(function() {
+  try {
+    typeof setTimeout == "function" ? cachedSetTimeout = setTimeout : cachedSetTimeout = defaultSetTimout;
+  } catch {
+    cachedSetTimeout = defaultSetTimout;
+  }
+  try {
+    typeof clearTimeout == "function" ? cachedClearTimeout = clearTimeout : cachedClearTimeout = defaultClearTimeout;
+  } catch {
+    cachedClearTimeout = defaultClearTimeout;
+  }
+})();
+function runTimeout(t) {
+  if (cachedSetTimeout === setTimeout) return setTimeout(t, 0);
+  if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) return cachedSetTimeout = setTimeout, setTimeout(t, 0);
+  try {
+    return cachedSetTimeout(t, 0);
+  } catch {
+    try {
+      return cachedSetTimeout.call(null, t, 0);
+    } catch {
+      return cachedSetTimeout.call(this, t, 0);
+    }
+  }
+}
+function runClearTimeout(t) {
+  if (cachedClearTimeout === clearTimeout) return clearTimeout(t);
+  if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) return cachedClearTimeout = clearTimeout, clearTimeout(t);
+  try {
+    return cachedClearTimeout(t);
+  } catch {
+    try {
+      return cachedClearTimeout.call(null, t);
+    } catch {
+      return cachedClearTimeout.call(this, t);
+    }
+  }
+}
+var queue = [], draining = false, currentQueue, queueIndex = -1;
+function cleanUpNextTick() {
+  !draining || !currentQueue || (draining = false, currentQueue.length ? queue = currentQueue.concat(queue) : queueIndex = -1, queue.length && drainQueue());
+}
+function drainQueue() {
+  if (!draining) {
+    var t = runTimeout(cleanUpNextTick);
+    draining = true;
+    for (var e = queue.length; e; ) {
+      for (currentQueue = queue, queue = []; ++queueIndex < e; ) currentQueue && currentQueue[queueIndex].run();
+      queueIndex = -1, e = queue.length;
+    }
+    currentQueue = null, draining = false, runClearTimeout(t);
+  }
+}
+process.nextTick = function(t) {
+  var e = new Array(arguments.length - 1);
+  if (arguments.length > 1) for (var a = 1; a < arguments.length; a++) e[a - 1] = arguments[a];
+  queue.push(new Item(t, e)), queue.length === 1 && !draining && runTimeout(drainQueue);
+};
+function Item(t, e) {
+  this.fun = t, this.array = e;
+}
+Item.prototype.run = function() {
+  this.fun.apply(null, this.array);
+};
+process.title = "browser";
+process.browser = true;
+process.env = {};
+process.argv = [];
+process.version = "";
+process.versions = {};
+function noop() {
+}
+process.on = noop;
+process.addListener = noop;
+process.once = noop;
+process.off = noop;
+process.removeListener = noop;
+process.removeAllListeners = noop;
+process.emit = noop;
+process.prependListener = noop;
+process.prependOnceListener = noop;
+process.listeners = function(t) {
+  return [];
+};
+process.binding = function(t) {
+  throw new Error("process.binding is not supported");
+};
+process.cwd = function() {
+  return "/";
+};
+process.chdir = function(t) {
+  throw new Error("process.chdir is not supported");
+};
+process.umask = function() {
+  return 0;
+};
+var browserExports = browser$f.exports;
+const process$1 = getDefaultExportFromCjs(browserExports);
+var processNextickArgs = { exports: {} }, hasRequiredProcessNextickArgs;
 function requireProcessNextickArgs() {
   if (hasRequiredProcessNextickArgs) return processNextickArgs.exports;
   hasRequiredProcessNextickArgs = 1, typeof process$1 > "u" || !process$1.version || process$1.version.indexOf("v0.") === 0 || process$1.version.indexOf("v1.") === 0 && process$1.version.indexOf("v1.8.") !== 0 ? processNextickArgs.exports = { nextTick: t } : processNextickArgs.exports = process$1;
@@ -7930,7 +7931,7 @@ function requireSha3$2() {
   })(sha3$3)), sha3$3.exports;
 }
 var sha3Exports = requireSha3$2();
-const sha3$2 = getDefaultExportFromCjs(sha3Exports);
+const sha3$2 = getDefaultExportFromCjs$1(sha3Exports);
 function keccak256$7(t) {
   return "0x" + sha3$2.keccak_256(arrayify$f(t));
 }
@@ -9876,7 +9877,7 @@ function requireHash$3() {
   })(hash$4)), hash$4;
 }
 var hashExports = requireHash$3();
-const hash$3 = getDefaultExportFromCjs(hashExports);
+const hash$3 = getDefaultExportFromCjs$1(hashExports);
 function createCommonjsModule$3(t, e, a) {
   return a = { path: e, exports: {}, require: function(n, s) {
     return commonjsRequire$4(n, s ?? a.path);
@@ -11756,7 +11757,7 @@ function requireAesJs() {
   })(aesJs)), aesJs.exports;
 }
 var aesJsExports = requireAesJs();
-const aes$1 = getDefaultExportFromCjs(aesJsExports), version$1d = "json-wallets/5.8.0";
+const aes$1 = getDefaultExportFromCjs$1(aesJsExports), version$1d = "json-wallets/5.8.0";
 function looseArrayify$1(t) {
   return typeof t == "string" && t.substring(0, 2) !== "0x" && (t = "0x" + t), arrayify$f(t);
 }
@@ -11977,7 +11978,7 @@ function requireScrypt() {
   })(scrypt$1)), scrypt$1.exports;
 }
 var scryptExports = requireScrypt();
-const scrypt = getDefaultExportFromCjs(scryptExports);
+const scrypt = getDefaultExportFromCjs$1(scryptExports);
 var __awaiter$a = function(t, e, a, n) {
   function s(c) {
     return c instanceof a ? c : new a(function(b) {
@@ -12660,7 +12661,7 @@ function requireBech32() {
   return bech32$1 = { decodeUnsafe: g, decode: x, encode: b, toWordsUnsafe: y, toWords: A, fromWordsUnsafe: S, fromWords: M }, bech32$1;
 }
 var bech32Exports = requireBech32();
-const bech32 = getDefaultExportFromCjs(bech32Exports), version$19 = "providers/5.6.8", logger$Y = new Logger$h(version$19);
+const bech32 = getDefaultExportFromCjs$1(bech32Exports), version$19 = "providers/5.6.8", logger$Y = new Logger$h(version$19);
 class Formatter {
   constructor() {
     this.formats = this.getDefaultFormats();
@@ -49129,7 +49130,7 @@ function requireLib() {
 export {
   requireDist$2 as $,
   lib_esm$f as A,
-  Buffer as B,
+  BN$6 as B,
   ContractFactory as C,
   lib_esm$e as D,
   lib_esm$d as E,
@@ -49155,7 +49156,7 @@ export {
   AddressZero as Y,
   defaultAbiCoder$1 as Z,
   parse$2 as _,
-  BN$6 as a,
+  Buffer$1 as a,
   requireStreamHttp as a0,
   requireHttpsBrowserify as a1,
   requireUrl as a2,
@@ -49165,12 +49166,12 @@ export {
   require_u64 as a6,
   requireBrowser as a7,
   requireIsarray$2 as a8,
-  Buffer$1 as b,
+  Buffer as b,
   requireBrowser$c as c,
   requireBrowser$b as d,
   requireSrc$a as e,
   requireSafeBuffer$4 as f,
-  getDefaultExportFromCjs as g,
+  getDefaultExportFromCjs$1 as g,
   requireAssert as h,
   isAddress as i,
   requireCryptoBrowserify$1 as j,
