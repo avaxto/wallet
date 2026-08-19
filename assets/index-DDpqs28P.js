@@ -20331,7 +20331,7 @@ ${pnt(f)}`), super(t.shortMessage, {
       };
     } catch (R) {
       const D = Xrt(R), { offchainLookup: M, offchainLookupSignature: O } = await oA(async () => {
-        const { offchainLookup: Q, offchainLookupSignature: L } = await import("./index-CCqPMdIg.js").then(async (m2) => {
+        const { offchainLookup: Q, offchainLookupSignature: L } = await import("./index-BhKOOxbX.js").then(async (m2) => {
           await m2.__tla;
           return m2;
         }).then((H) => H.c);
@@ -134895,7 +134895,7 @@ ${tte(this.cause)}` : this.toString();
     const i = "0x" + e.getEvmAddress();
     if (e.type === "injected") {
       const h = e.provider, { createWalletClient: g, custom: p, publicActions: v } = await oA(async () => {
-        const { createWalletClient: y, custom: w, publicActions: B } = await import("./index-CCqPMdIg.js").then(async (m) => {
+        const { createWalletClient: y, custom: w, publicActions: B } = await import("./index-BhKOOxbX.js").then(async (m) => {
           await m.__tla;
           return m;
         }).then((C) => C.i);
@@ -135069,7 +135069,7 @@ ${tte(this.cause)}` : this.toString();
     }
     return i;
   }
-  const yne = "/assets/AVXTO_Icon-C4PhuO-v.png", _Jt = 1e4, qMe = 1e4, $Jt = 8, eKt = 1e3, zMe = "0.1.11", XMe = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", tKt = new Ae(1e6), ZMe = "AVXTO", WMe = yne, jMe = "AVAX Toolbox", YMe = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", nKt = new Ae(1e6), JMe = "SMTK", KMe = yne, _Me = "SomeToken", eP = {
+  const yne = "/assets/AVXTO_Icon-C4PhuO-v.png", _Jt = 1e4, qMe = 1e4, $Jt = 8, eKt = 1e3, zMe = "0.1.12", XMe = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", tKt = new Ae(1e6), ZMe = "AVXTO", WMe = yne, jMe = "AVAX Toolbox", YMe = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", nKt = new Ae(1e6), JMe = "SMTK", KMe = yne, _Me = "SomeToken", eP = {
     pollingIntervals: {
       xChain: _Jt,
       cChain: qMe
@@ -136269,7 +136269,7 @@ ${tte(this.cause)}` : this.toString();
     static async sendErc721(t, n, r, a, s, i, o) {
       if (t.type === "injected") {
         const d = t, f = "0x" + t.getEvmAddress(), h = s.data.address, g = n, p = "0x23b872dd", v = f.replace("0x", "").padStart(64, "0"), m = g.replace("0x", "").padStart(64, "0"), b = BigInt(i).toString(16).padStart(64, "0"), y = p + v + m + b, { createWalletClient: w, custom: B, publicActions: C } = await oA(async () => {
-          const { createWalletClient: P, custom: U, publicActions: R } = await import("./index-CCqPMdIg.js").then(async (m2) => {
+          const { createWalletClient: P, custom: U, publicActions: R } = await import("./index-BhKOOxbX.js").then(async (m2) => {
             await m2.__tla;
             return m2;
           }).then((D) => D.i);
@@ -171320,7 +171320,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
   async function Gxn(e, t, n, r) {
     const a = "0x" + e.getEvmAddress(), s = e.provider, { createWalletClient: i, custom: o, publicActions: A } = await oA(async () => {
-      const { createWalletClient: d, custom: f, publicActions: h } = await import("./index-CCqPMdIg.js").then(async (m) => {
+      const { createWalletClient: d, custom: f, publicActions: h } = await import("./index-BhKOOxbX.js").then(async (m) => {
         await m.__tla;
         return m;
       }).then((g) => g.i);
@@ -171890,7 +171890,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       t[25] || (t[25] = E("h1", null, "Swap", -1)),
       t[26] || (t[26] = E("p", {
         class: "desc"
-      }, " Swap tokens on the Avalanche C-Chain. Routing is powered by LI.FI for best-price execution across on-chain liquidity. Quotes and the executable transaction are fetched via API; signing and broadcasting happen locally with your active wallet. ", -1)),
+      }, " Swap tokens on the current loaded platform. Routing is powered by select routers for best-price execution across on-chain liquidity. Quotes and the executable transaction are fetched via API; signing and broadcasting happen locally with your active wallet. ", -1)),
       E("div", vTn, [
         E("div", bTn, [
           E("div", yTn, [
@@ -172130,7 +172130,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     ],
     [
       "__scopeId",
-      "data-v-a893dab0"
+      "data-v-731470ac"
     ]
   ]), lSn = 5e5, cSn = 8e4, uSn = 3, dSn = 2, fSn = 2500, Mye = {
     address: bS,
