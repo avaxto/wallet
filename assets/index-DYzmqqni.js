@@ -11317,7 +11317,7 @@ ${n}${e}`, "utf8");
     async sendViaExtension(t, n) {
       await this.assertOnChain();
       const r = this.wallet.provider, a = await this.getGasPrice(), { createWalletClient: s, custom: i, publicActions: o } = await D1(async () => {
-        const { createWalletClient: l, custom: A, publicActions: u } = await import("./index-DF9ID-Rc.js").then(async (m) => {
+        const { createWalletClient: l, custom: A, publicActions: u } = await import("./index-uNdu1Lg2.js").then(async (m) => {
           await m.__tla;
           return m;
         }).then((d) => d.i);
@@ -22564,7 +22564,7 @@ ${Dut(f)}`), super(t.shortMessage, {
       };
     } catch (M) {
       const R = odt(M), { offchainLookup: P, offchainLookupSignature: F } = await D1(async () => {
-        const { offchainLookup: L, offchainLookupSignature: V } = await import("./index-DF9ID-Rc.js").then(async (m8) => {
+        const { offchainLookup: L, offchainLookupSignature: V } = await import("./index-uNdu1Lg2.js").then(async (m8) => {
           await m8.__tla;
           return m8;
         }).then((G) => G.c);
@@ -152857,7 +152857,7 @@ ${Qne(this.cause)}` : this.toString();
     }
     return i;
   }
-  const rae = "/assets/AVXTO_Icon-C4PhuO-v.png", _Cn = 1e4, kGe = 1e4, $Cn = 8, exn = 1e3, MGe = "0.1.20", RGe = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", txn = new se(1e6), DGe = "AVXTO", NGe = rae, PGe = "AVAX Toolbox", UGe = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", nxn = new se(1e6), zGe = "SMTK", FGe = rae, LGe = "SomeToken", pR = {
+  const rae = "/assets/AVXTO_Icon-C4PhuO-v.png", _Cn = 1e4, kGe = 1e4, $Cn = 8, exn = 1e3, MGe = "0.1.21", RGe = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", txn = new se(1e6), DGe = "AVXTO", NGe = rae, PGe = "AVAX Toolbox", UGe = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", nxn = new se(1e6), zGe = "SMTK", FGe = rae, LGe = "SomeToken", pR = {
     pollingIntervals: {
       xChain: _Cn,
       cChain: kGe
@@ -154155,7 +154155,7 @@ ${Qne(this.cause)}` : this.toString();
     static async sendErc721(t, n, r, a, s, i, o) {
       if (t.type === "injected") {
         const d = t, f = "0x" + t.getEvmAddress(), p = s.data.address, h = n, g = "0x23b872dd", v = f.replace("0x", "").padStart(64, "0"), m = h.replace("0x", "").padStart(64, "0"), b = BigInt(i).toString(16).padStart(64, "0"), y = g + v + m + b, { createWalletClient: w, custom: B, publicActions: C } = await D1(async () => {
-          const { createWalletClient: N, custom: D, publicActions: M } = await import("./index-DF9ID-Rc.js").then(async (m8) => {
+          const { createWalletClient: N, custom: D, publicActions: M } = await import("./index-uNdu1Lg2.js").then(async (m8) => {
             await m8.__tla;
             return m8;
           }).then((R) => R.i);
