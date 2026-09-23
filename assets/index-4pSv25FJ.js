@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/injectedChainSync-Bc50uaRZ.js","assets/vendor-SbyuBW_8.js","assets/crypto-BGdJyCGl.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/injectedChainSync-CNfEh0vy.js","assets/vendor-SbyuBW_8.js","assets/crypto-BGdJyCGl.js"])))=>i.map(i=>d[i]);
 var __defProp = Object.defineProperty;
 var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
 var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
@@ -25083,7 +25083,7 @@ function print() { __p += __j.call(arguments, '') }
     async sendViaExtension(t, n) {
       await this.assertOnChain();
       const r = this.wallet.provider, a = await this.getGasPrice(), { createWalletClient: s, custom: i, publicActions: o } = await ei(async () => {
-        const { createWalletClient: l, custom: A, publicActions: u } = await import("./index-DPJ0ATZ9.js").then(async (m) => {
+        const { createWalletClient: l, custom: A, publicActions: u } = await import("./index-HgOyZcoH.js").then(async (m) => {
           await m.__tla;
           return m;
         }).then((d) => d.i);
@@ -34454,7 +34454,7 @@ PROCEED WITH CAUTION!
         i.value = false;
       }
     }, c = (b) => {
-      e.value = b, ske = b, ps().notifyWalletChanged(), o(), b instanceof sv && (u(b), ei(() => import("./injectedChainSync-Bc50uaRZ.js").then(async (m3) => {
+      e.value = b, ske = b, ps().notifyWalletChanged(), o(), b instanceof sv && (u(b), ei(() => import("./injectedChainSync-CNfEh0vy.js").then(async (m3) => {
         await m3.__tla;
         return m3;
       }), __vite__mapDeps([0,1,2])).then((y) => y.attachInjectedChainSync()));
@@ -44506,6 +44506,24 @@ Message: ${r}.
                     default: de(() => [
                       ...t[8] || (t[8] = [
                         w("a", {
+                          href: "https://moats.app/moat/0xebe5fbacb882fd313d05684bef591c31f83b0524",
+                          target: "_blank",
+                          rel: "noopener noreferrer",
+                          class: "wallet_link"
+                        }, " AVXTO Moat Page ", -1)
+                      ])
+                    ]),
+                    _: 1
+                  })
+                ]),
+                _: 1
+              }),
+              G(A, null, {
+                default: de(() => [
+                  G(l, null, {
+                    default: de(() => [
+                      ...t[9] || (t[9] = [
+                        w("a", {
                           href: "https://lfj.gg/avalanche/trade/0xf56cecc07d97ac50630022cf84c19e612ae8c93d",
                           target: "_blank",
                           rel: "noopener noreferrer",
@@ -44540,7 +44558,7 @@ Message: ${r}.
                 default: de(() => [
                   G(l, null, {
                     default: de(() => [
-                      ...t[9] || (t[9] = [
+                      ...t[10] || (t[10] = [
                         w("a", {
                           href: "https://dexscreener.com/avalanche/0x2bdebde7e1088e42aafef104b5f7457aca5ab86f",
                           target: "_blank",
@@ -44566,7 +44584,7 @@ Message: ${r}.
       }, {
         default: de(() => [
           w("div", oCt, [
-            t[11] || (t[11] = w("p", null, [
+            t[12] || (t[12] = w("p", null, [
               le(" In ArenaTrade make sure to switch to "),
               w("strong", null, "Avalanche mode"),
               le(" to buy AVXTO. Robinhood CA is on a different address. ")
@@ -44582,7 +44600,7 @@ Message: ${r}.
                 onClick: e.proceedToArenaTrade
               }, {
                 default: de(() => [
-                  ...t[10] || (t[10] = [
+                  ...t[11] || (t[11] = [
                     le(" Proceed ", -1)
                   ])
                 ]),
@@ -44608,7 +44626,7 @@ Message: ${r}.
     ],
     [
       "__scopeId",
-      "data-v-8b1b8aca"
+      "data-v-619aecce"
     ]
   ]), uCt = "data:image/svg+xml,%3csvg%20width='321'%20height='321'%20viewBox='0%200%20321%20321'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='160.699'%20cy='160.699'%20r='160'%20fill='%23E22B3C'/%3e%3cpath%20d='M151.983%20107.682H80.4414L119.774%2066.0645L151.983%20107.682Z'%20fill='black'/%3e%3cpath%20d='M151.983%20107.682H80.4414L119.774%2066.0645L151.983%20107.682Z'%20fill='%23F5F6FA'/%3e%3cpath%20d='M119.285%20116.625H77L152.669%20280.001L119.285%20116.625Z'%20fill='black'/%3e%3cpath%20d='M119.285%20116.625H77L152.669%20280.001L119.285%20116.625Z'%20fill='%23F5F6FA'/%3e%3cpath%20d='M193.944%20116.625H128.25L161.246%20276.561L193.944%20116.625Z'%20fill='black'/%3e%3cpath%20d='M193.944%20116.625H128.25L161.246%20276.561L193.944%20116.625Z'%20fill='%23F5F6FA'/%3e%3cpath%20d='M202.907%20116.625H245.192L169.523%20280.001L202.907%20116.625Z'%20fill='black'/%3e%3cpath%20d='M202.907%20116.625H245.192L169.523%20280.001L202.907%20116.625Z'%20fill='%23F5F6FA'/%3e%3cpath%20d='M129.28%2063.9994L192.566%2063.9994L161.294%20105.617L129.28%2063.9994Z'%20fill='black'/%3e%3cpath%20d='M129.28%2063.9994L192.566%2063.9994L161.294%20105.617L129.28%2063.9994Z'%20fill='%23F5F6FA'/%3e%3cpath%20d='M241.752%20107.682H170.211L202.419%2066.0645L241.752%20107.682Z'%20fill='black'/%3e%3cpath%20d='M241.752%20107.682H170.211L202.419%2066.0645L241.752%20107.682Z'%20fill='%23F5F6FA'/%3e%3c/svg%3e", dCt = "data:image/svg+xml,%3csvg%20width='321'%20height='321'%20viewBox='0%200%20321%20321'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='160.699'%20cy='160.699'%20r='160'%20fill='%23ccff00'/%3e%3cpath%20d='M151.983%20107.682H80.4414L119.774%2066.0645L151.983%20107.682Z'%20fill='black'/%3e%3cpath%20d='M151.983%20107.682H80.4414L119.774%2066.0645L151.983%20107.682Z'%20fill='%23101410'/%3e%3cpath%20d='M119.285%20116.625H77L152.669%20280.001L119.285%20116.625Z'%20fill='black'/%3e%3cpath%20d='M119.285%20116.625H77L152.669%20280.001L119.285%20116.625Z'%20fill='%23101410'/%3e%3cpath%20d='M193.944%20116.625H128.25L161.246%20276.561L193.944%20116.625Z'%20fill='black'/%3e%3cpath%20d='M193.944%20116.625H128.25L161.246%20276.561L193.944%20116.625Z'%20fill='%23101410'/%3e%3cpath%20d='M202.907%20116.625H245.192L169.523%20280.001L202.907%20116.625Z'%20fill='black'/%3e%3cpath%20d='M202.907%20116.625H245.192L169.523%20280.001L202.907%20116.625Z'%20fill='%23101410'/%3e%3cpath%20d='M129.28%2063.9994L192.566%2063.9994L161.294%20105.617L129.28%2063.9994Z'%20fill='black'/%3e%3cpath%20d='M129.28%2063.9994L192.566%2063.9994L161.294%20105.617L129.28%2063.9994Z'%20fill='%23101410'/%3e%3cpath%20d='M241.752%20107.682H170.211L202.419%2066.0645L241.752%20107.682Z'%20fill='black'/%3e%3cpath%20d='M241.752%20107.682H170.211L202.419%2066.0645L241.752%20107.682Z'%20fill='%23101410'/%3e%3c/svg%3e", fCt = "data:image/svg+xml,%3csvg%20width='321'%20height='321'%20viewBox='0%200%20321%20321'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='160.699'%20cy='160.699'%20r='160'%20fill='%239945FF'/%3e%3cpath%20d='M151.983%20107.682H80.4414L119.774%2066.0645L151.983%20107.682Z'%20fill='black'/%3e%3cpath%20d='M151.983%20107.682H80.4414L119.774%2066.0645L151.983%20107.682Z'%20fill='%23F5F6FA'/%3e%3cpath%20d='M119.285%20116.625H77L152.669%20280.001L119.285%20116.625Z'%20fill='black'/%3e%3cpath%20d='M119.285%20116.625H77L152.669%20280.001L119.285%20116.625Z'%20fill='%23F5F6FA'/%3e%3cpath%20d='M193.944%20116.625H128.25L161.246%20276.561L193.944%20116.625Z'%20fill='black'/%3e%3cpath%20d='M193.944%20116.625H128.25L161.246%20276.561L193.944%20116.625Z'%20fill='%23F5F6FA'/%3e%3cpath%20d='M202.907%20116.625H245.192L169.523%20280.001L202.907%20116.625Z'%20fill='black'/%3e%3cpath%20d='M202.907%20116.625H245.192L169.523%20280.001L202.907%20116.625Z'%20fill='%23F5F6FA'/%3e%3cpath%20d='M129.28%2063.9994L192.566%2063.9994L161.294%20105.617L129.28%2063.9994Z'%20fill='black'/%3e%3cpath%20d='M129.28%2063.9994L192.566%2063.9994L161.294%20105.617L129.28%2063.9994Z'%20fill='%23F5F6FA'/%3e%3cpath%20d='M241.752%20107.682H170.211L202.419%2066.0645L241.752%20107.682Z'%20fill='black'/%3e%3cpath%20d='M241.752%20107.682H170.211L202.419%2066.0645L241.752%20107.682Z'%20fill='%23F5F6FA'/%3e%3c/svg%3e", hCt = He({
     name: "Home",
@@ -53836,7 +53854,7 @@ ${$Tt(f)}`), super(t.shortMessage, {
       };
     } catch (S) {
       const T = bRt(S), { offchainLookup: P, offchainLookupSignature: F } = await ei(async () => {
-        const { offchainLookup: O, offchainLookupSignature: H } = await import("./index-DPJ0ATZ9.js").then(async (m3) => {
+        const { offchainLookup: O, offchainLookupSignature: H } = await import("./index-HgOyZcoH.js").then(async (m3) => {
           await m3.__tla;
           return m3;
         }).then((_) => _.c);
@@ -167680,7 +167698,7 @@ ${U2e(this.cause)}` : this.toString();
     }
     return i;
   }
-  const Jce = "/assets/AVXTO_Icon-C4PhuO-v.png", CXn = "0.1.34", SXn = 1e4, l$e = 1e4, xXn = 8, kXn = 1e3, A$e = CXn, r3 = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", _O = new ce(1e6), ZO = "AVXTO", u$e = Jce, d$e = "AVAX Toolbox", $ce = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", TXn = new ce(1e6), f$e = "SMTK", h$e = Jce, p$e = "SomeToken", HU = {
+  const Jce = "/assets/AVXTO_Icon-C4PhuO-v.png", CXn = "0.1.35", SXn = 1e4, l$e = 1e4, xXn = 8, kXn = 1e3, A$e = CXn, r3 = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", _O = new ce(1e6), ZO = "AVXTO", u$e = Jce, d$e = "AVAX Toolbox", $ce = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", TXn = new ce(1e6), f$e = "SMTK", h$e = Jce, p$e = "SomeToken", HU = {
     pollingIntervals: {
       xChain: SXn,
       cChain: l$e
@@ -168981,7 +168999,7 @@ ${U2e(this.cause)}` : this.toString();
     static async sendErc721(t, n, r, a, s, i, o) {
       if (t.type === "injected") {
         const d = t, f = "0x" + t.getEvmAddress(), h = s.data.address, p = n, g = "0x23b872dd", v = f.replace("0x", "").padStart(64, "0"), m = p.replace("0x", "").padStart(64, "0"), b = BigInt(i).toString(16).padStart(64, "0"), y = g + v + m + b, { createWalletClient: I, custom: B, publicActions: x } = await ei(async () => {
-          const { createWalletClient: D, custom: M, publicActions: S } = await import("./index-DPJ0ATZ9.js").then(async (m3) => {
+          const { createWalletClient: D, custom: M, publicActions: S } = await import("./index-HgOyZcoH.js").then(async (m3) => {
             await m3.__tla;
             return m3;
           }).then((T) => T.i);
@@ -220582,7 +220600,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
           return;
         }
         y(J[0]);
-      }, q.on("accountsChanged", b)), ei(() => import("./injectedChainSync-Bc50uaRZ.js").then(async (m3) => {
+      }, q.on("accountsChanged", b)), ei(() => import("./injectedChainSync-CNfEh0vy.js").then(async (m3) => {
         await m3.__tla;
         return m3;
       }), __vite__mapDeps([0,1,2])).then((J) => J.attachInjectedChainSync());
