@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/injectedChainSync-B2Glztn_.js","assets/vendor-SbyuBW_8.js","assets/crypto-BGdJyCGl.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/injectedChainSync-DqPofAvD.js","assets/vendor-SbyuBW_8.js","assets/crypto-BGdJyCGl.js"])))=>i.map(i=>d[i]);
 var __defProp = Object.defineProperty;
 var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
 var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
@@ -25083,7 +25083,7 @@ function print() { __p += __j.call(arguments, '') }
     async sendViaExtension(t, n) {
       await this.assertOnChain();
       const r = this.wallet.provider, a = await this.getGasPrice(), { createWalletClient: s, custom: i, publicActions: o } = await ti(async () => {
-        const { createWalletClient: l, custom: A, publicActions: u } = await import("./index-Ox_v9LIu.js").then(async (m) => {
+        const { createWalletClient: l, custom: A, publicActions: u } = await import("./index-DMcOFqbb.js").then(async (m) => {
           await m.__tla;
           return m;
         }).then((d) => d.i);
@@ -34454,7 +34454,7 @@ PROCEED WITH CAUTION!
         i.value = false;
       }
     }, c = (b) => {
-      e.value = b, kke = b, gs().notifyWalletChanged(), o(), b instanceof cv && (u(b), ti(() => import("./injectedChainSync-B2Glztn_.js").then(async (m3) => {
+      e.value = b, kke = b, gs().notifyWalletChanged(), o(), b instanceof cv && (u(b), ti(() => import("./injectedChainSync-DqPofAvD.js").then(async (m3) => {
         await m3.__tla;
         return m3;
       }), __vite__mapDeps([0,1,2])).then((y) => y.attachInjectedChainSync()));
@@ -53854,7 +53854,7 @@ ${wMt(f)}`), super(t.shortMessage, {
       };
     } catch (S) {
       const T = QRt(S), { offchainLookup: P, offchainLookupSignature: F } = await ti(async () => {
-        const { offchainLookup: V, offchainLookupSignature: H } = await import("./index-Ox_v9LIu.js").then(async (m3) => {
+        const { offchainLookup: V, offchainLookupSignature: H } = await import("./index-DMcOFqbb.js").then(async (m3) => {
           await m3.__tla;
           return m3;
         }).then((_) => _.c);
@@ -167698,7 +167698,7 @@ ${X2e(this.cause)}` : this.toString();
     }
     return i;
   }
-  const ule = "/assets/AVXTO_Icon-C4PhuO-v.png", _Xn = "0.1.38", jXn = 1e4, x$e = 1e4, ZXn = 8, KXn = 1e3, k$e = _Xn, a3 = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", YO = new le(1e6), JO = "AVXTO", T$e = ule, M$e = "AVAX Toolbox", dle = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", YXn = new le(1e6), R$e = "SMTK", N$e = ule, D$e = "SomeToken", _U = {
+  const ule = "/assets/AVXTO_Icon-C4PhuO-v.png", _Xn = "0.1.39", jXn = 1e4, x$e = 1e4, ZXn = 8, KXn = 1e3, k$e = _Xn, a3 = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", YO = new le(1e6), JO = "AVXTO", T$e = ule, M$e = "AVAX Toolbox", dle = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", YXn = new le(1e6), R$e = "SMTK", N$e = ule, D$e = "SomeToken", _U = {
     pollingIntervals: {
       xChain: jXn,
       cChain: x$e
@@ -168999,7 +168999,7 @@ ${X2e(this.cause)}` : this.toString();
     static async sendErc721(t, n, r, a, s, i, o) {
       if (t.type === "injected") {
         const d = t, f = "0x" + t.getEvmAddress(), h = s.data.address, p = n, g = "0x23b872dd", v = f.replace("0x", "").padStart(64, "0"), m = p.replace("0x", "").padStart(64, "0"), b = BigInt(i).toString(16).padStart(64, "0"), y = g + v + m + b, { createWalletClient: I, custom: B, publicActions: x } = await ti(async () => {
-          const { createWalletClient: D, custom: M, publicActions: S } = await import("./index-Ox_v9LIu.js").then(async (m3) => {
+          const { createWalletClient: D, custom: M, publicActions: S } = await import("./index-DMcOFqbb.js").then(async (m3) => {
             await m3.__tla;
             return m3;
           }).then((T) => T.i);
@@ -222254,7 +222254,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
           return;
         }
         y(J[0]);
-      }, q.on("accountsChanged", b)), ti(() => import("./injectedChainSync-B2Glztn_.js").then(async (m3) => {
+      }, q.on("accountsChanged", b)), ti(() => import("./injectedChainSync-DqPofAvD.js").then(async (m3) => {
         await m3.__tla;
         return m3;
       }), __vite__mapDeps([0,1,2])).then((J) => J.attachInjectedChainSync());
