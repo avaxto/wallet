@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/injectedChainSync-Dlagyh_s.js","assets/vendor-BaWGSkyX.js","assets/crypto-BGdJyCGl.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/injectedChainSync-BWdTyO0v.js","assets/vendor-BaWGSkyX.js","assets/crypto-BGdJyCGl.js"])))=>i.map(i=>d[i]);
 var __defProp = Object.defineProperty;
 var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
 var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
@@ -25091,7 +25091,7 @@ function print() { __p += __j.call(arguments, '') }
     async sendViaExtension(t, n) {
       await this.assertOnChain();
       const r = this.wallet.provider, a = await this.getGasPrice(), { createWalletClient: s, custom: i, publicActions: o } = await ti(async () => {
-        const { createWalletClient: l, custom: A, publicActions: u } = await import("./index-B8qKeSuN.js").then(async (m) => {
+        const { createWalletClient: l, custom: A, publicActions: u } = await import("./index-dV_u9D81.js").then(async (m) => {
           await m.__tla;
           return m;
         }).then((d) => d.i);
@@ -34462,7 +34462,7 @@ PROCEED WITH CAUTION!
         i.value = false;
       }
     }, c = (b) => {
-      e.value = b, Rke = b, rs().notifyWalletChanged(), o(), b instanceof uv && (u(b), ti(() => import("./injectedChainSync-Dlagyh_s.js").then(async (m3) => {
+      e.value = b, Rke = b, rs().notifyWalletChanged(), o(), b instanceof uv && (u(b), ti(() => import("./injectedChainSync-BWdTyO0v.js").then(async (m3) => {
         await m3.__tla;
         return m3;
       }), __vite__mapDeps([0,1,2])).then((y) => y.attachInjectedChainSync()));
@@ -44526,7 +44526,7 @@ Message: ${r}.
       "__scopeId",
       "data-v-b1bd7402"
     ]
-  ]), lse = "/assets/AVXTO_Icon-C4PhuO-v.png", FCt = "0.1.42", LCt = 1e4, tMe = 1e4, zCt = 8, OCt = 1e3, nMe = FCt, Gd = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", FL = new le(1e6), LL = "AVXTO", rMe = lse, aMe = "AVAX Toolbox", Ase = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", VCt = new le(1e6), sMe = "SMTK", iMe = lse, oMe = "SomeToken", zA = "0xebe5fbacb882fd313d05684bef591c31f83b0524", NB = 43114, aP = 86400, LK = 1, Bb = 730, _4 = (e, t, n = []) => ({
+  ]), lse = "/assets/AVXTO_Icon-C4PhuO-v.png", FCt = "0.1.43", LCt = 1e4, tMe = 1e4, zCt = 8, OCt = 1e3, nMe = FCt, Gd = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", FL = new le(1e6), LL = "AVXTO", rMe = lse, aMe = "AVAX Toolbox", Ase = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", VCt = new le(1e6), sMe = "SMTK", iMe = lse, oMe = "SomeToken", zA = "0xebe5fbacb882fd313d05684bef591c31f83b0524", NB = 43114, aP = 86400, LK = 1, Bb = 730, _4 = (e, t, n = []) => ({
     name: e,
     type: "function",
     stateMutability: "view",
@@ -54148,7 +54148,7 @@ ${zMt(f)}`), super(t.shortMessage, {
       };
     } catch (S) {
       const T = aNt(S), { offchainLookup: P, offchainLookupSignature: L } = await ti(async () => {
-        const { offchainLookup: V, offchainLookupSignature: q } = await import("./index-B8qKeSuN.js").then(async (m3) => {
+        const { offchainLookup: V, offchainLookupSignature: q } = await import("./index-dV_u9D81.js").then(async (m3) => {
           await m3.__tla;
           return m3;
         }).then((_) => _.c);
@@ -169374,7 +169374,7 @@ ${Z2e(this.cause)}` : this.toString();
     static async sendErc721(t, n, r, a, s, i, o) {
       if (t.type === "injected") {
         const d = t, f = "0x" + t.getEvmAddress(), h = s.data.address, p = n, g = "0x23b872dd", v = f.replace("0x", "").padStart(64, "0"), m = p.replace("0x", "").padStart(64, "0"), b = BigInt(i).toString(16).padStart(64, "0"), y = g + v + m + b, { createWalletClient: I, custom: B, publicActions: x } = await ti(async () => {
-          const { createWalletClient: D, custom: M, publicActions: S } = await import("./index-B8qKeSuN.js").then(async (m3) => {
+          const { createWalletClient: D, custom: M, publicActions: S } = await import("./index-dV_u9D81.js").then(async (m3) => {
             await m3.__tla;
             return m3;
           }).then((T) => T.i);
@@ -222637,7 +222637,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
           return;
         }
         y(J[0]);
-      }, G.on("accountsChanged", b)), ti(() => import("./injectedChainSync-Dlagyh_s.js").then(async (m3) => {
+      }, G.on("accountsChanged", b)), ti(() => import("./injectedChainSync-BWdTyO0v.js").then(async (m3) => {
         await m3.__tla;
         return m3;
       }), __vite__mapDeps([0,1,2])).then((J) => J.attachInjectedChainSync());
