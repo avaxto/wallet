@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/injectedChainSync-unhzhWhC.js","assets/vendor-C3gEtrcs.js","assets/crypto-CvxmDsJu.js","assets/index-DohYwGwz.js","assets/wormhole-CF4M17IO.js","assets/api-ca8vt7Jy.js","assets/create-DGkuRurI.js","assets/balances-BncbkBAK.js","assets/index-B-D3Qb7m.js","assets/platform-glgmS_EP.js","assets/weth-CkpMya9H.js","assets/index-D4G7y5jh.js","assets/index-FShFTVQ1.js","assets/index-Bb6VMqje.js","assets/index-Pjynl2np.js","assets/index-CEDxE6J8.js","assets/index-jmyvVfT4.js","assets/web3-D3OicfWi.js","assets/index-7EapZTs-.js","assets/index-CtRWWrRd.js","assets/index-Cj03Dgm3.js","assets/index-Bp-ZHTlN.js","assets/index-CQGUaMDw.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/injectedChainSync-Dl951xe3.js","assets/vendor-C3gEtrcs.js","assets/crypto-CvxmDsJu.js","assets/index-DCm6ei9G.js","assets/wormhole-DLdMj1-J.js","assets/api-JQ13yNkJ.js","assets/create-DJGrnIqz.js","assets/balances-Dj6N520d.js","assets/index-BSD5nmG_.js","assets/platform-pwlICwcg.js","assets/weth-CkpMya9H.js","assets/index-Dxd-7Epi.js","assets/index-CP3ROg4i.js","assets/index-CmFO2LcR.js","assets/index-BHcBedqD.js","assets/index-D9VMXBNy.js","assets/index-Cnv30XMN.js","assets/web3-Dwh31gFC.js","assets/index-C3xIb1LT.js","assets/index-BUQ_rFoz.js","assets/index-edoOIQMV.js","assets/index-INOTixgH.js","assets/index-CQGUaMDw.js"])))=>i.map(i=>d[i]);
 var __defProp = Object.defineProperty;
 var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
 var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
@@ -25187,7 +25187,7 @@ function print() { __p += __j.call(arguments, '') }
     async sendViaExtension(t, n) {
       await this.assertOnChain();
       const r = this.wallet.provider, a = await this.getGasPrice(), { createWalletClient: s, custom: o, publicActions: i } = await Pa(async () => {
-        const { createWalletClient: l, custom: A, publicActions: u } = await import("./index-ptkfU8dy.js").then(async (m) => {
+        const { createWalletClient: l, custom: A, publicActions: u } = await import("./index-DUOMQnHG.js").then(async (m) => {
           await m.__tla;
           return m;
         }).then((d) => d.i);
@@ -34641,7 +34641,7 @@ PROCEED WITH CAUTION!
         o.value = false;
       }
     }, c = (y) => {
-      e.value = y, iRe = y, rs().notifyWalletChanged(), i(), y instanceof Qv && (u(y), Pa(() => import("./injectedChainSync-unhzhWhC.js").then(async (m10) => {
+      e.value = y, iRe = y, rs().notifyWalletChanged(), i(), y instanceof Qv && (u(y), Pa(() => import("./injectedChainSync-Dl951xe3.js").then(async (m10) => {
         await m10.__tla;
         return m10;
       }), __vite__mapDeps([0,1,2])).then((w) => w.attachInjectedChainSync()));
@@ -44883,7 +44883,7 @@ Message: ${r}.
       "__scopeId",
       "data-v-6196ccbf"
     ]
-  ]), Uoe = "data:image/png;base64,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", MTt = "0.1.54", RTt = 1e4, UNe = 1e4, NTt = 8, DTt = 1e3, LNe = MTt, bA = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", Qz = new le(1e6), Gz = "AVXTO", FNe = Uoe, zNe = "AVAX Toolbox", xw = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", PTt = new le(1e6), ONe = "SMTK", VNe = Uoe, QNe = "SomeToken", M2 = "0xebe5fbacb882fd313d05684bef591c31f83b0524", wC = 43114, cU = 86400, tJ = 1, sy = 730, pd = (e, t, n = []) => ({
+  ]), Uoe = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IB2cksfwAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAAd0SU1FB+oKBgIZKLnhALUAAAtXSURBVHja7V3vbxzFGX5mdvZ2z7f2OT7fnS9nSxjHTiBETVQQUUVQU/IBVUBVvvVL/0UkVAGqkKioROmnFGjTSoTQNgUasEniX3t3++PtB3t9e3szu7M/znIDkw/Z25ud3Xnnmfd93mdmz2zz4jMEzVJjDNfmG9h0GmjbFhxhwjY4TMYm6hHJmyTJwXRVknyk5KGiXfW10ed4DZ8IgyDAnu9jezTCF4cuPnEH8EjbJGA6BuyZAjfbLWwtOJgTItGJxFMRQJJektQ+5Q042Vw+A8oG/TAIcHf/AB/u7uKBH5QzoMUY3ugu4+rSIkzOpy2RfF4FRGTGm0YppV5EaciTDKK24RTXeiHh0709vPvoMYYpiBSqLzZtC2+u9dCyLHkfpf3XR15qyWW87Ob07jVZTM7w0+YCnqrbeHt7B/dGnrQel518fr6B366vKYxHUz0i7WlLR/+mek8lkJe4lmLtUfRscuRNzQKiKYu2aiZ+s9LBtbqtZ8Dn5xv49dp5WIYxA+TpooX0qlaJvJS2LM7xWnsZV2073YCbtoVfrfbG/m7KeNnII2W01UAeJZAncYt0cuOKkEeKm8VnCwEmY/jlcgtPm6bcgBZjeHOtp0YeSAt5hdChMW0rKyXatg2O15dbsGK07cSAb3SX031eIoJq+zwd5MXOqXxe5ciDHvKS7nbJNPFqc2HSgD1T4OrSot4okRaIKgMHzQp5OWdIvPoVx0HneKZyALjZbil4XhJ5+iS5Kp9XebSlAshLoNZkDDfm548MWGMMWwvOD47nFbo89uHCXB0mYxDX5huJ9KxMhkESO5+RDEMZnUgOApKnidG5umHgim2BbzqNHwbPYwww+NH/WfVJbwZs2DZE27ZSeR4kPA+FVRVN5JURBWJfspqA/ZMN1Fa7MJw6YHCE7gje9kMMPrsH/8H3itmmRl78SVumCeGcEMMni+eJ80twblyF0ahPfG00bBiNHqy1Lty/f4nDj++kjUZqcQwDwuZcgrzZ6HmFkccYQAwg0kKesdzE/C+eB6+ZahmKc8xd3gAR4B4bkTSRFx3anIMnxdCzyPOMThdGq6XdeONnz6UaL17mnl2H0T2XL+pHKGdsMhc+kzyPGzBXViA6XS2eJ/rLMJcX9RVlzlG/sjGVnVDy+WKcM36an3WeJ3o9MLMG3pgDPyavaRA21zq5Z4bZPgcwfeRNiQlnVs8TJkRnbBCxspKZ23KnntuAvF47pjf6yIt8Jj/LPM/s98EMcVJRNJtgkeChei6NdYypEoSF8n8A4GdVz4NlQ7Rak40wBrGykprb+g/3ctvP3z8EwlAbeXGI8LPK88z+KsCnH89YWgITyqUceF98BcqJwuH9B/LuUrZp+FnU81ijAXFuURptmWHAiPyiBObh3iHcu/f1Z++BC/f23dzIi474WdTzzNXV6Zw11pBYXsZR2JQX9+O/YfTNduZ9wpGH3T/cBg293MibjMJnSM/jzSaMhYXUaMssC0ZrSannkR9i970/4/Af/1RO59H2Izx650/wvtpWIw9q5EV9Fno8r4wkNQ75QUgQnKUKA2a/ny5JRSjsdBBsb6uxEYQ4/ONncP9yF7ULfYilBTCDI9h3Mfr3A3j/+U4qUiiytumk7vhaMdPcNmaAwb6LYORjrtkA50xqPKPVgtFopBovOsUdB3x+HuHerpyJHV9Oey4Gt+9q5bZ5jYcxDyzm5EiTuXtDD/5gBApDDPbdKW8QURTz/PlUISh56oRYK4yX7tOokM+T+sCxr8m6iWa0jfm8MAgx3HfHM8vzMRqOpmxodDrgtn2MPNLqjNFsApadYTxVbotc0XZMIiYrcbVCqbY/5cgZBwfuVBAYHg4QBmFsGDlMFZrSnoTzifQud9QvgbyoEteLtrrIm6wwGowQjHzpBYMDd1IwqJlSHZLSOkCAWGoBhjG9ZeeYc0pzWyqPvJNnzzVglKcCg/XSS7BMtS4Xfv458P0OzE4nH/LidxECotuF99XX5chnTuRJDFhNtD1Ra6+/COfGjdRn8bY2cfDBB0cIyoO8ZDBpd+B9/c1EpkNqMlco2qbKWeWRl2i02cTcCy9o6HBt1K9dK529cMuCsbRUGFdUAp68nM8j6TrG3K1b4Lat1fna+jpYLJJm+TzlYHS7Cp9XTbTNpDFleF78s/nMM7DX1/UldSFgbW3mnrbJ741jYl01z0tfmCSZpF8UeQRWM+G8/LJ68VpRRLsNo90uaLzxU5m93qkhL/L7vAqfF32u//zmhBCQp1ibm2CSYJJrIOKK9QyRF7cRL8Pz4ggw+quoP3e5cOe5baP29NPaPm9KW4wIea9XKc+bvu2kOsSL87zYjRiD88orx+sXxUut35evvOVAh9lqgQljZshTROGcPi+BWuvF60dRsGzhHPbFi6liqXxvX3weC4hOt3rkSfYZEtF4WbPoqLBmEw0NzqdbjIUFmGur5XxhpzMxCJUgT8UDi0TbeGuNV/Q5n3ZAeWp9MhiofJ7imbk9Vqyr9nnR7KPkmkieaDvmfM/Cjjv+igozBayLW/oRUeYLV1Zm4vNSibQ28ghArVaI8+kWs92GaLczfR4pwvYRsXZK8TzZzgeK78JV8cAs5AHA3M3inC8PN0RRbsjixLo4z0uzwQkCdXheXHQx+n3UL1/GrAuv27AubGT6PNUWCLG4CGZZlfm8SXHmqD2uxfPiA8sYnFu3UncHVFlq/T54QaSziFhX6POmo7AGz4uv21rXK+J8ebjhpYsnvlYHefGPotUCM3ghnifzecmb8DyjwivmfPm44VrhiC663cI8L1vOyvJ5MbG5cat6zqcdUNbXwWxLG3lxZdDsdJRsIa/P09cDkzs/n50N58vFDbcu5r+QjoQKtWKtgzy1rMPTou2JVlCrYX6GnE+bG3baEO2ONvLi39USy59aPC/DeCT1gZL6p8H5dIu9pakbJvphzDvgjpOb52W1zdOQh1PkfPrcsI7axgVt5I1PM5jne6V93oSNKCsXPmXOpx1QVlO4YZrStXgOPClSFPKJmKYxsvdt7evXUTtNzpeDG9YvXQIYUyNP8nmCWGvyPCnyYjFDpI2Yd/8+Hr71VuawULqvVY4eFXgXLy4eBA++BXw/3/5m3y+vBcZf7El798y/fz8jw04xYIF3z9Sn8+8YiPO86VuSdD94WrSV2YBUeiBpTIcs9ea09udV804xafcreSikeMrzpvcZRZ50ty1Vh7zoiPtZCgwVHNQSlatcty3L89LG2ydADIIAjhAK5MlbK428GeySOi2fFz8ahCH4XhSVNH8rQe+mldGsan0eqkFeVA7CAHx7NCr/iz6Sa2e9M7QqPS+L50HRDyJgx/fBvzh0Z+zz6HSQRxVeK5220+XLkQf+iTvAYRAUQ57WnmSk5KezXbfNndum+jyayNjcMMQdbwTuEeHuwcGPPC/rkRMn7g2H8CIi/eHjXXgUqpGHIj5vtsirSs/T9nmx815I+GjgjsWEB36AT3f3UDkg/s95nqrunYGL7TCMqTEA3n30GDujUQU+j051f141Pk8PeSDg+8DH+wM3IWcBGBLh7e0dDMLwR56nuHZIId7b38NItcHy3sjDO9/twAvpR55Hk8jziPD7/T38Kwgkgmqs3HYH+N132ydI/CHzvEnk7eKv3vRvSUu1+tvuAI//+y1eX25hKXpV6wnV85I5etJVPQx8vCtBXlQyfwr+1eYCrjjOyR8cIB0HQlDXTRowM9qmGFCT55EkvyeFleNU5c7AxfsDd8Ln5TJgVDqGgRvz89iYq2POMJ5o5LlhiHvDIT6KUZW0wvL8OQyTMVyxLWzYNlqmCccwYHMOwVg28ihh1DLIyzJgCvLig+vTkSR1EAbY8X18OfJwxxvByxHY/wfTxOlk/1okPQAAAABJRU5ErkJggg==", MTt = "0.1.55", RTt = 1e4, UNe = 1e4, NTt = 8, DTt = 1e3, LNe = MTt, bA = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", Qz = new le(1e6), Gz = "AVXTO", FNe = Uoe, zNe = "AVAX Toolbox", xw = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", PTt = new le(1e6), ONe = "SMTK", VNe = Uoe, QNe = "SomeToken", M2 = "0xebe5fbacb882fd313d05684bef591c31f83b0524", wC = 43114, cU = 86400, tJ = 1, sy = 730, pd = (e, t, n = []) => ({
     name: e,
     type: "function",
     stateMutability: "view",
@@ -54505,7 +54505,7 @@ ${NPt(f)}`), super(t.shortMessage, {
       };
     } catch (C) {
       const T = JUt(C), { offchainLookup: P, offchainLookupSignature: z } = await Pa(async () => {
-        const { offchainLookup: Q, offchainLookupSignature: X } = await import("./index-ptkfU8dy.js").then(async (m10) => {
+        const { offchainLookup: Q, offchainLookupSignature: X } = await import("./index-DUOMQnHG.js").then(async (m10) => {
           await m10.__tla;
           return m10;
         }).then((_) => _.c);
@@ -169749,7 +169749,7 @@ ${I2e(this.cause)}` : this.toString();
     static async sendErc721(t, n, r, a, s, o, i) {
       if (t.type === "injected") {
         const d = t, f = "0x" + t.getEvmAddress(), h = s.data.address, p = n, m = "0x23b872dd", b = f.replace("0x", "").padStart(64, "0"), v = p.replace("0x", "").padStart(64, "0"), y = BigInt(o).toString(16).padStart(64, "0"), w = m + b + v + y, { createWalletClient: I, custom: B, publicActions: k } = await Pa(async () => {
-          const { createWalletClient: N, custom: M, publicActions: C } = await import("./index-ptkfU8dy.js").then(async (m10) => {
+          const { createWalletClient: N, custom: M, publicActions: C } = await import("./index-DUOMQnHG.js").then(async (m10) => {
             await m10.__tla;
             return m10;
           }).then((T) => T.i);
@@ -225417,39 +225417,39 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
   async function L_r(e) {
     const [{ Wormhole: t }, { EvmPlatform: n }, { SolanaPlatform: r }] = await Promise.all([
-      Pa(() => import("./index-DohYwGwz.js").then(async (m) => {
+      Pa(() => import("./index-DCm6ei9G.js").then(async (m) => {
         await m.__tla;
         return m;
       }), __vite__mapDeps([3,4,5,2,6,7,1])),
-      Pa(() => import("./index-B-D3Qb7m.js").then(async (m) => {
+      Pa(() => import("./index-BSD5nmG_.js").then(async (m) => {
         await m.__tla;
         return m;
       }), __vite__mapDeps([8,9,5,4,2,7,10,1])),
-      Pa(() => import("./index-D4G7y5jh.js").then(async (m) => {
+      Pa(() => import("./index-Dxd-7Epi.js").then(async (m) => {
         await m.__tla;
         return m;
       }), __vite__mapDeps([11,12,5,4,2,1])),
-      Pa(() => import("./index-Bb6VMqje.js").then(async (m) => {
+      Pa(() => import("./index-CmFO2LcR.js").then(async (m) => {
         await m.__tla;
         return m;
       }), __vite__mapDeps([13,4,5,2,9,7,6,1])),
-      Pa(() => import("./index-Pjynl2np.js").then(async (m) => {
+      Pa(() => import("./index-BHcBedqD.js").then(async (m) => {
         await m.__tla;
         return m;
       }), __vite__mapDeps([14,13,4,5,2,9,7,6,1,10])),
-      Pa(() => import("./index-CEDxE6J8.js").then(async (m) => {
+      Pa(() => import("./index-D9VMXBNy.js").then(async (m) => {
         await m.__tla;
         return m;
       }).then((a) => a.i), __vite__mapDeps([15,2,5,12,4,6])),
-      Pa(() => import("./index-jmyvVfT4.js").then(async (m) => {
+      Pa(() => import("./index-Cnv30XMN.js").then(async (m) => {
         await m.__tla;
         return m;
       }), __vite__mapDeps([16,15,2,5,12,4,6,17,1])),
-      Pa(() => import("./index-7EapZTs-.js").then(async (m) => {
+      Pa(() => import("./index-C3xIb1LT.js").then(async (m) => {
         await m.__tla;
         return m;
       }), __vite__mapDeps([18,5,1,2])),
-      Pa(() => import("./index-CtRWWrRd.js").then(async (m) => {
+      Pa(() => import("./index-BUQ_rFoz.js").then(async (m) => {
         await m.__tla;
         return m;
       }), __vite__mapDeps([19,5,4,2,13,9,7,6,1,18]))
@@ -225467,7 +225467,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
   async function Wre() {
     const { Wormhole: e } = await Pa(async () => {
-      const { Wormhole: t } = await import("./index-DohYwGwz.js").then(async (m) => {
+      const { Wormhole: t } = await import("./index-DCm6ei9G.js").then(async (m) => {
         await m.__tla;
         return m;
       });
@@ -227338,11 +227338,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   function VZr() {
     return GE || (GE = (async () => {
       const [e, t] = await Promise.all([
-        Pa(() => import("./index-Cj03Dgm3.js").then(async (m) => {
+        Pa(() => import("./index-edoOIQMV.js").then(async (m) => {
           await m.__tla;
           return m;
         }), __vite__mapDeps([20,1,2])),
-        Pa(() => import("./index-Bp-ZHTlN.js").then(async (m) => {
+        Pa(() => import("./index-INOTixgH.js").then(async (m) => {
           await m.__tla;
           return m;
         }), __vite__mapDeps([21,1,2]))
@@ -231583,7 +231583,7 @@ log('C-Chain AVAX: ' + bal)
         }
         const te = (_a3 = r.value) == null ? void 0 : _a3.ethAddress;
         s$r(te, K[0]) || w(K[0]);
-      }, H.on("accountsChanged", y)), Pa(() => import("./injectedChainSync-unhzhWhC.js").then(async (m10) => {
+      }, H.on("accountsChanged", y)), Pa(() => import("./injectedChainSync-Dl951xe3.js").then(async (m10) => {
         await m10.__tla;
         return m10;
       }), __vite__mapDeps([0,1,2])).then((K) => K.attachInjectedChainSync());
