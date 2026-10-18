@@ -1,4 +1,4 @@
-import { _ as r, __tla as __tla_0 } from "./index-LiAlS9gV.js";
+import { _ as r, __tla as __tla_0 } from "./index-Cowcbw-0.js";
 import "./vendor-1lVrJJTd.js";
 import "./crypto-CoV0x5dM.js";
 let a;

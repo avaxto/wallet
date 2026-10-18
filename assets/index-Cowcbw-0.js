@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/injectedChainSync-BHvPmWYa.js","assets/vendor-1lVrJJTd.js","assets/crypto-CoV0x5dM.js","assets/Eth-ETsAbtQa.js","assets/index-BxUWARIs.js","assets/wormhole-wO6_ynZj.js","assets/api-MAX7rlSa.js","assets/create-DfZEX3BU.js","assets/balances-BdJE3dxc.js","assets/index-D4jLhBW2.js","assets/platform-C74DuIQ_.js","assets/weth-CkpMya9H.js","assets/index-uixh_Rx1.js","assets/index-VPMC5CHr.js","assets/index-DWTShZoS.js","assets/index-1FBxWzh3.js","assets/index-CP2oA6RQ.js","assets/index-BQnkyPH9.js","assets/index-BpRlNsZ1.js","assets/index-D42l2b8c.js","assets/index-BqF_lxkM.js","assets/index-BGdxazIf.js","assets/index-C-3SjcIh.js","assets/index-CQCWTPJd.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/injectedChainSync-DhZItEEO.js","assets/vendor-1lVrJJTd.js","assets/crypto-CoV0x5dM.js","assets/Eth-ByxyyzmB.js","assets/index-DnPbTYgI.js","assets/wormhole-DHPPl-7d.js","assets/api-C_iRALAx.js","assets/create-CxVGDnA9.js","assets/balances-DRXErAHu.js","assets/index-Bm-iePVl.js","assets/platform-DLsxSRw8.js","assets/weth-CkpMya9H.js","assets/index-DBoqOLHB.js","assets/index-DEbmwd9y.js","assets/index-7LxxGmdK.js","assets/index-Ddllsp3m.js","assets/index-ndYHlARJ.js","assets/index-DQfNCgvn.js","assets/index-5tsN8pfC.js","assets/index-Djkf5qzH.js","assets/index-BTOou70A.js","assets/index-Dha77a7_.js","assets/index-BG1Pnqio.js","assets/index-CQCWTPJd.js"])))=>i.map(i=>d[i]);
 var __defProp = Object.defineProperty;
 var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
 var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
@@ -25195,7 +25195,7 @@ function print() { __p += __j.call(arguments, '') }
     async sendViaExtension(t, n) {
       await this.assertOnChain();
       const r = this.wallet.provider, s = await this.getGasPrice(), { createWalletClient: a, custom: o, publicActions: i } = await Dr(async () => {
-        const { createWalletClient: c, custom: u, publicActions: d } = await import("./index-TCoCw4Y7.js").then(async (m) => {
+        const { createWalletClient: c, custom: u, publicActions: d } = await import("./index-CO_Wkpf4.js").then(async (m) => {
           await m.__tla;
           return m;
         }).then((f) => f.i);
@@ -34973,7 +34973,7 @@ PROCEED WITH CAUTION!
         o.value = false;
       }
     }, l = (w) => {
-      e.value = w, PIe = w, qs().notifyWalletChanged(), i(), w instanceof Sv && (d(w), Dr(() => import("./injectedChainSync-BHvPmWYa.js").then(async (m10) => {
+      e.value = w, PIe = w, qs().notifyWalletChanged(), i(), w instanceof Sv && (d(w), Dr(() => import("./injectedChainSync-DhZItEEO.js").then(async (m10) => {
         await m10.__tla;
         return m10;
       }), __vite__mapDeps([0,1,2])).then((A) => A.attachInjectedChainSync()));
@@ -45202,7 +45202,7 @@ Message: ${r}.
       "__scopeId",
       "data-v-6196ccbf"
     ]
-  ]), Yre = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IB2cksfwAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAAd0SU1FB+oKBgIZKLnhALUAAAtXSURBVHja7V3vbxzFGX5mdvZ2z7f2OT7fnS9nSxjHTiBETVQQUUVQU/IBVUBVvvVL/0UkVAGqkKioROmnFGjTSoTQNgUasEniX3t3++PtB3t9e3szu7M/znIDkw/Z25ud3Xnnmfd93mdmz2zz4jMEzVJjDNfmG9h0GmjbFhxhwjY4TMYm6hHJmyTJwXRVknyk5KGiXfW10ed4DZ8IgyDAnu9jezTCF4cuPnEH8EjbJGA6BuyZAjfbLWwtOJgTItGJxFMRQJJektQ+5Q042Vw+A8oG/TAIcHf/AB/u7uKBH5QzoMUY3ugu4+rSIkzOpy2RfF4FRGTGm0YppV5EaciTDKK24RTXeiHh0709vPvoMYYpiBSqLzZtC2+u9dCyLHkfpf3XR15qyWW87Ob07jVZTM7w0+YCnqrbeHt7B/dGnrQel518fr6B366vKYxHUz0i7WlLR/+mek8lkJe4lmLtUfRscuRNzQKiKYu2aiZ+s9LBtbqtZ8Dn5xv49dp5WIYxA+TpooX0qlaJvJS2LM7xWnsZV2073YCbtoVfrfbG/m7KeNnII2W01UAeJZAncYt0cuOKkEeKm8VnCwEmY/jlcgtPm6bcgBZjeHOtp0YeSAt5hdChMW0rKyXatg2O15dbsGK07cSAb3SX031eIoJq+zwd5MXOqXxe5ciDHvKS7nbJNPFqc2HSgD1T4OrSot4okRaIKgMHzQp5OWdIvPoVx0HneKZyALjZbil4XhJ5+iS5Kp9XebSlAshLoNZkDDfm548MWGMMWwvOD47nFbo89uHCXB0mYxDX5huJ9KxMhkESO5+RDEMZnUgOApKnidG5umHgim2BbzqNHwbPYwww+NH/WfVJbwZs2DZE27ZSeR4kPA+FVRVN5JURBWJfspqA/ZMN1Fa7MJw6YHCE7gje9kMMPrsH/8H3itmmRl78SVumCeGcEMMni+eJ80twblyF0ahPfG00bBiNHqy1Lty/f4nDj++kjUZqcQwDwuZcgrzZ6HmFkccYQAwg0kKesdzE/C+eB6+ZahmKc8xd3gAR4B4bkTSRFx3anIMnxdCzyPOMThdGq6XdeONnz6UaL17mnl2H0T2XL+pHKGdsMhc+kzyPGzBXViA6XS2eJ/rLMJcX9RVlzlG/sjGVnVDy+WKcM36an3WeJ3o9MLMG3pgDPyavaRA21zq5Z4bZPgcwfeRNiQlnVs8TJkRnbBCxspKZ23KnntuAvF47pjf6yIt8Jj/LPM/s98EMcVJRNJtgkeChei6NdYypEoSF8n8A4GdVz4NlQ7Rak40wBrGykprb+g/3ctvP3z8EwlAbeXGI8LPK88z+KsCnH89YWgITyqUceF98BcqJwuH9B/LuUrZp+FnU81ijAXFuURptmWHAiPyiBObh3iHcu/f1Z++BC/f23dzIi474WdTzzNXV6Zw11pBYXsZR2JQX9+O/YfTNduZ9wpGH3T/cBg293MibjMJnSM/jzSaMhYXUaMssC0ZrSannkR9i970/4/Af/1RO59H2Izx650/wvtpWIw9q5EV9Fno8r4wkNQ75QUgQnKUKA2a/ny5JRSjsdBBsb6uxEYQ4/ONncP9yF7ULfYilBTCDI9h3Mfr3A3j/+U4qUiiytumk7vhaMdPcNmaAwb6LYORjrtkA50xqPKPVgtFopBovOsUdB3x+HuHerpyJHV9Oey4Gt+9q5bZ5jYcxDyzm5EiTuXtDD/5gBApDDPbdKW8QURTz/PlUISh56oRYK4yX7tOokM+T+sCxr8m6iWa0jfm8MAgx3HfHM8vzMRqOpmxodDrgtn2MPNLqjNFsApadYTxVbotc0XZMIiYrcbVCqbY/5cgZBwfuVBAYHg4QBmFsGDlMFZrSnoTzifQud9QvgbyoEteLtrrIm6wwGowQjHzpBYMDd1IwqJlSHZLSOkCAWGoBhjG9ZeeYc0pzWyqPvJNnzzVglKcCg/XSS7BMtS4Xfv458P0OzE4nH/LidxECotuF99XX5chnTuRJDFhNtD1Ra6+/COfGjdRn8bY2cfDBB0cIyoO8ZDBpd+B9/c1EpkNqMlco2qbKWeWRl2i02cTcCy9o6HBt1K9dK529cMuCsbRUGFdUAp68nM8j6TrG3K1b4Lat1fna+jpYLJJm+TzlYHS7Cp9XTbTNpDFleF78s/nMM7DX1/UldSFgbW3mnrbJ741jYl01z0tfmCSZpF8UeQRWM+G8/LJ68VpRRLsNo90uaLzxU5m93qkhL/L7vAqfF32u//zmhBCQp1ibm2CSYJJrIOKK9QyRF7cRL8Pz4ggw+quoP3e5cOe5baP29NPaPm9KW4wIea9XKc+bvu2kOsSL87zYjRiD88orx+sXxUut35evvOVAh9lqgQljZshTROGcPi+BWuvF60dRsGzhHPbFi6liqXxvX3weC4hOt3rkSfYZEtF4WbPoqLBmEw0NzqdbjIUFmGur5XxhpzMxCJUgT8UDi0TbeGuNV/Q5n3ZAeWp9MhiofJ7imbk9Vqyr9nnR7KPkmkieaDvmfM/Cjjv+igozBayLW/oRUeYLV1Zm4vNSibQ28ghArVaI8+kWs92GaLczfR4pwvYRsXZK8TzZzgeK78JV8cAs5AHA3M3inC8PN0RRbsjixLo4z0uzwQkCdXheXHQx+n3UL1/GrAuv27AubGT6PNUWCLG4CGZZlfm8SXHmqD2uxfPiA8sYnFu3UncHVFlq/T54QaSziFhX6POmo7AGz4uv21rXK+J8ebjhpYsnvlYHefGPotUCM3ghnifzecmb8DyjwivmfPm44VrhiC663cI8L1vOyvJ5MbG5cat6zqcdUNbXwWxLG3lxZdDsdJRsIa/P09cDkzs/n50N58vFDbcu5r+QjoQKtWKtgzy1rMPTou2JVlCrYX6GnE+bG3baEO2ONvLi39USy59aPC/DeCT1gZL6p8H5dIu9pakbJvphzDvgjpOb52W1zdOQh1PkfPrcsI7axgVt5I1PM5jne6V93oSNKCsXPmXOpx1QVlO4YZrStXgOPClSFPKJmKYxsvdt7evXUTtNzpeDG9YvXQIYUyNP8nmCWGvyPCnyYjFDpI2Yd/8+Hr71VuawULqvVY4eFXgXLy4eBA++BXw/3/5m3y+vBcZf7El798y/fz8jw04xYIF3z9Sn8+8YiPO86VuSdD94WrSV2YBUeiBpTIcs9ea09udV804xafcreSikeMrzpvcZRZ50ty1Vh7zoiPtZCgwVHNQSlatcty3L89LG2ydADIIAjhAK5MlbK428GeySOi2fFz8ahCH4XhSVNH8rQe+mldGsan0eqkFeVA7CAHx7NCr/iz6Sa2e9M7QqPS+L50HRDyJgx/fBvzh0Z+zz6HSQRxVeK5220+XLkQf+iTvAYRAUQ57WnmSk5KezXbfNndum+jyayNjcMMQdbwTuEeHuwcGPPC/rkRMn7g2H8CIi/eHjXXgUqpGHIj5vtsirSs/T9nmx815I+GjgjsWEB36AT3f3UDkg/s95nqrunYGL7TCMqTEA3n30GDujUQU+j051f141Pk8PeSDg+8DH+wM3IWcBGBLh7e0dDMLwR56nuHZIId7b38NItcHy3sjDO9/twAvpR55Hk8jziPD7/T38Kwgkgmqs3HYH+N132ydI/CHzvEnk7eKv3vRvSUu1+tvuAI//+y1eX25hKXpV6wnV85I5etJVPQx8vCtBXlQyfwr+1eYCrjjOyR8cIB0HQlDXTRowM9qmGFCT55EkvyeFleNU5c7AxfsDd8Ln5TJgVDqGgRvz89iYq2POMJ5o5LlhiHvDIT6KUZW0wvL8OQyTMVyxLWzYNlqmCccwYHMOwVg28ihh1DLIyzJgCvLig+vTkSR1EAbY8X18OfJwxxvByxHY/wfTxOlk/1okPQAAAABJRU5ErkJggg==", mxt = "0.1.60", gxt = 1e4, aEe = 1e4, vxt = 8, yxt = 1e3, oEe = mxt, cu = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", c$ = new ce(1e6), u$ = "AVXTO", iEe = Yre, lEe = "AVAX Toolbox", LI = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", bxt = new ce(1e6), cEe = "SMTK", uEe = Yre, dEe = "SomeToken", K2 = "0xebe5fbacb882fd313d05684bef591c31f83b0524", ex = 43114, Mz = 86400, EG = 1, Fy = 730, gd = (e, t, n = []) => ({
+  ]), Yre = "data:image/png;base64,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", mxt = "0.1.61", gxt = 1e4, aEe = 1e4, vxt = 8, yxt = 1e3, oEe = mxt, cu = "0xf56CeCc07d97Ac50630022CF84C19e612ae8C93D", c$ = new ce(1e6), u$ = "AVXTO", iEe = Yre, lEe = "AVAX Toolbox", LI = "0xCf568B85904790A03FB2d17DD5042e99AB8F80F8", bxt = new ce(1e6), cEe = "SMTK", uEe = Yre, dEe = "SomeToken", K2 = "0xebe5fbacb882fd313d05684bef591c31f83b0524", ex = 43114, Mz = 86400, EG = 1, Fy = 730, gd = (e, t, n = []) => ({
     name: e,
     type: "function",
     stateMutability: "view",
@@ -55000,7 +55000,7 @@ ${vBt(h)}`), super(t.shortMessage, {
       };
     } catch (C) {
       const B = FMt(C), { offchainLookup: R, offchainLookupSignature: U } = await Dr(async () => {
-        const { offchainLookup: F, offchainLookupSignature: X } = await import("./index-TCoCw4Y7.js").then(async (m10) => {
+        const { offchainLookup: F, offchainLookupSignature: X } = await import("./index-CO_Wkpf4.js").then(async (m10) => {
           await m10.__tla;
           return m10;
         }).then((W) => W.c);
@@ -143928,7 +143928,7 @@ ${w1e(this.cause)}` : this.toString();
     static async sendErc721(t, n, r, s, a, o, i) {
       if (t.type === "injected") {
         const f = t, h = "0x" + t.getEvmAddress(), m = a.data.address, p = n, v = "0x23b872dd", y = h.replace("0x", "").padStart(64, "0"), b = p.replace("0x", "").padStart(64, "0"), w = BigInt(o).toString(16).padStart(64, "0"), A = v + y + b + w, { createWalletClient: k, custom: x, publicActions: T } = await Dr(async () => {
-          const { createWalletClient: z, custom: M, publicActions: C } = await import("./index-TCoCw4Y7.js").then(async (m10) => {
+          const { createWalletClient: z, custom: M, publicActions: C } = await import("./index-CO_Wkpf4.js").then(async (m10) => {
             await m10.__tla;
             return m10;
           }).then((B) => B.i);
@@ -159264,7 +159264,7 @@ ${w1e(this.cause)}` : this.toString();
       const n = await ZRe(t), r = await n.getVersion(t), s = await n.getXPUB(t, Tl), a = new jf();
       a.publicKey = s.pubKey, a.chainCode = s.chainCode;
       const { default: o } = await Dr(async () => {
-        const { default: u } = await import("./Eth-ETsAbtQa.js").then(async (m) => {
+        const { default: u } = await import("./Eth-ByxyyzmB.js").then(async (m) => {
           await m.__tla;
           return m;
         });
@@ -208608,39 +208608,39 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
   async function GDr(e) {
     const [{ Wormhole: t }, { EvmPlatform: n }, { SolanaPlatform: r }] = await Promise.all([
-      Dr(() => import("./index-BxUWARIs.js").then(async (m) => {
+      Dr(() => import("./index-DnPbTYgI.js").then(async (m) => {
         await m.__tla;
         return m;
       }), __vite__mapDeps([4,5,6,2,7,8,1])),
-      Dr(() => import("./index-D4jLhBW2.js").then(async (m) => {
+      Dr(() => import("./index-Bm-iePVl.js").then(async (m) => {
         await m.__tla;
         return m;
       }), __vite__mapDeps([9,10,6,5,2,8,11,1])),
-      Dr(() => import("./index-uixh_Rx1.js").then(async (m) => {
+      Dr(() => import("./index-DBoqOLHB.js").then(async (m) => {
         await m.__tla;
         return m;
       }), __vite__mapDeps([12,13,6,5,2,1])),
-      Dr(() => import("./index-DWTShZoS.js").then(async (m) => {
+      Dr(() => import("./index-7LxxGmdK.js").then(async (m) => {
         await m.__tla;
         return m;
       }), __vite__mapDeps([14,10,6,5,2,8,7,1])),
-      Dr(() => import("./index-1FBxWzh3.js").then(async (m) => {
+      Dr(() => import("./index-Ddllsp3m.js").then(async (m) => {
         await m.__tla;
         return m;
       }), __vite__mapDeps([15,14,10,6,5,2,8,7,1,11])),
-      Dr(() => import("./index-CP2oA6RQ.js").then(async (m) => {
+      Dr(() => import("./index-ndYHlARJ.js").then(async (m) => {
         await m.__tla;
         return m;
       }).then((s) => s.i), __vite__mapDeps([16,2,13,6,5,7])),
-      Dr(() => import("./index-BQnkyPH9.js").then(async (m) => {
+      Dr(() => import("./index-DQfNCgvn.js").then(async (m) => {
         await m.__tla;
         return m;
       }), __vite__mapDeps([17,16,2,13,6,5,7,18,1])),
-      Dr(() => import("./index-D42l2b8c.js").then(async (m) => {
+      Dr(() => import("./index-Djkf5qzH.js").then(async (m) => {
         await m.__tla;
         return m;
       }), __vite__mapDeps([19,6,1,2])),
-      Dr(() => import("./index-BqF_lxkM.js").then(async (m) => {
+      Dr(() => import("./index-BTOou70A.js").then(async (m) => {
         await m.__tla;
         return m;
       }), __vite__mapDeps([20,6,5,2,14,10,8,7,1,19]))
@@ -208658,7 +208658,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
   async function Jee() {
     const { Wormhole: e } = await Dr(async () => {
-      const { Wormhole: t } = await import("./index-BxUWARIs.js").then(async (m) => {
+      const { Wormhole: t } = await import("./index-DnPbTYgI.js").then(async (m) => {
         await m.__tla;
         return m;
       });
@@ -212482,11 +212482,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   function yHr() {
     return Ck || (Ck = (async () => {
       const [e, t] = await Promise.all([
-        Dr(() => import("./index-BGdxazIf.js").then(async (m) => {
+        Dr(() => import("./index-Dha77a7_.js").then(async (m) => {
           await m.__tla;
           return m;
         }), __vite__mapDeps([21,1,2])),
-        Dr(() => import("./index-C-3SjcIh.js").then(async (m) => {
+        Dr(() => import("./index-BG1Pnqio.js").then(async (m) => {
           await m.__tla;
           return m;
         }), __vite__mapDeps([22,1,2]))
@@ -217583,7 +217583,7 @@ log('C-Chain AVAX: ' + bal)
         }
         const ne = (_a4 = r.value) == null ? void 0 : _a4.ethAddress;
         RWr(ne, Q[0]) || A(Q[0]);
-      }, q.on("accountsChanged", w)), Dr(() => import("./injectedChainSync-BHvPmWYa.js").then(async (m10) => {
+      }, q.on("accountsChanged", w)), Dr(() => import("./injectedChainSync-DhZItEEO.js").then(async (m10) => {
         await m10.__tla;
         return m10;
       }), __vite__mapDeps([0,1,2])).then((Q) => Q.attachInjectedChainSync());
